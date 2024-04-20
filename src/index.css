@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Helvetica', 'sans-serif';
+  font-size: clamp(12px, 15px, 1rem);
+}
