@@ -2,7 +2,7 @@ import React from 'react'
 import ServiceCard from './common/ServiceCard'
 import { servicesData } from '../utils/constant/data'
 
-function Services() {
+function OurServices() {
 
   return (
     <div className='w-full min-h-screen p-10'>
@@ -28,4 +28,4 @@ function Services() {
   )
 }
 
-export default Services
+export default OurServices

@@ -9,7 +9,7 @@ const ContactForm = () => {
       <div className="grid lg:grid-cols-3 gap-10">
         <div className="col-span-2">
           <p className="font-extrabold text-2xl mb-10">Send Us a Message</p>
-          <form action="." method="post" className="grid gap-3">
+          <form action="." method="post" className="grid gap-5">
             <div className="grid col-span-2 gap-5 grid-cols-2 w-full">
               <Input placeholder={"Name"} />
               <Input placeholder={"Email"} />
@@ -19,7 +19,7 @@ const ContactForm = () => {
               <Textarea placeholder={"Message"} />
             </div>
             <div className="grid col-span-2 gap-3">
-              <button className="bg-info p-4 rounded-md text-white font-semibold">
+              <button className="bg-info p-4 mt-3 rounded-md text-white font-semibold">
                 SEND MESSAGE
               </button>
             </div>

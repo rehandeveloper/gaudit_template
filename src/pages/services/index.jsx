@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
 import { urlRoutes } from "../../routes";
+import OurServices from "../../component/Services";
 const Services = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const Services = () => {
           </p>
         }
       />
-      
+      <OurServices/>
     </>
   );
 };

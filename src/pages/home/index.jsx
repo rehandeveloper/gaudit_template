@@ -4,7 +4,7 @@ import CompanyStatus from '../../component/CompanyStatus';
 import Faq from '../../component/Faq';
 import Blog from '../../component/Blog';
 import "./home.css";
-import Services from '../../component/Services';
+import OurServices from '../../component/Services';
 import ChooseUs from '../../component/ChooseUs';
 
 const Home = () => {
@@ -13,8 +13,8 @@ const Home = () => {
       <HomeHero />
       <AboutCompany />
       <CompanyStatus />
-      <Services/>
-      <ChooseUs/>
+      <OurServices/>
+      {/* <ChooseUs/> */}
       <Faq />
       <Blog />
     </div>

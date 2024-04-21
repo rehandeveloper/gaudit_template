@@ -14,9 +14,9 @@ function Hero({
   return (
     <>
       <div
-        id="hero"
+        id="Hero"
         className={`relative w-full ${imageHeight} hero-image bg-cover bg-no-repeat bg-center object-cover lg:px-20 p-16 font-semibold `}
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ background: `url(${image}),rgba(22, 22, 22, 0.407)` }}
       >
         <div className="w-full lg:w-1/2">
           <p className="text-primary-light-1 my-4">{subtitle}</p>
