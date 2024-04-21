@@ -8,37 +8,50 @@ import Cases from "./pages/cases";
 import CaseDetail from "./pages/caseDetail";
 import ContactUs from "./pages/contactUs";
 
+export const urlRoutes = {
+  HOME: "/",
+  ABOUT: "/about",
+  SERVICER: "/services",
+  SERVICE_DETAIL: "/service-detail",
+  CASES: "/cases",
+  PRICING: "/pricing",
+  FAQ: "/faq",
+  CASE_DETAIL: "/case-detail",
+  CONTACT: "/contact",
+}; 
+
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: urlRoutes.HOME,
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: urlRoutes.HOME,
         element: <Home />,
       },
       {
-        path: "/about",
+        path: urlRoutes.ABOUT,
         element: <AboutUs />,
       },
       {
-        path: "/services",
+        path: urlRoutes.SERVICER,
         element: <Services />,
       },
       {
-        path: "/service-detail",
+        path: urlRoutes.SERVICE_DETAIL,
         element: <ServiceDetail />,
       },
       {
-        path: "/cases",
+        path: urlRoutes.CASES,
         element: <Cases />,
       },
       {
-        path: "/case-detail",
+        path: urlRoutes.CASE_DETAIL,
         element: <CaseDetail />,
       },
       {
-        path: "/contact",
+        path: urlRoutes.CONTACT,
         element: <ContactUs />,
       },
     ],

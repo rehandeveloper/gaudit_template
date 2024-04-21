@@ -4,6 +4,7 @@ import image from "../../assets/bg-2.jpg";
 import { Link } from "react-router-dom";
 import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
+import { urlRoutes } from "../../routes";
 const Services = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Services = () => {
         title={`Our Services`}
         description={
           <p>
-            <Link to="/" className="text-info">
+            <Link to={urlRoutes.HOME} className="text-info">
               Home
             </Link>{" "}
             / Services

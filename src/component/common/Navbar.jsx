@@ -1,6 +1,7 @@
 import React, { createRef, useState } from 'react'
 import { ChevronDownOutline } from 'react-ionicons'
 import { Link } from 'react-router-dom';
+import { urlRoutes } from '../../routes';
 
 function Navbar() {
    const [state, setState] = useState(false);
@@ -26,13 +27,13 @@ function Navbar() {
 
           <ul className="hidden gap-x-5 mx-40  lg:flex">
             <li className="text-white p-4 min-w-max">
-              <Link to="/">Home</Link>
+              <Link to={urlRoutes.HOME}>Home</Link>
             </li>
             <li className="text-white p-4 min-w-max">
-              <Link to="/about">About</Link>
+              <Link to={urlRoutes.ABOUT}>About</Link>
             </li>
             <li className="text-white relative group p-4  min-w-max">
-              <Link to="/services">
+              <Link to={urlRoutes.SERVICER}>
                 <span>
                   Services
                   <ChevronDownOutline
@@ -55,7 +56,7 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <Link to="/services">Services</Link>
+                  <Link to={urlRoutes.SERVICER}>Services</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
                   <Link to="/service-detail">Service Detail</Link>
@@ -64,7 +65,7 @@ function Navbar() {
             </li>
 
             <li className="text-white relative group p-4  min-w-max">
-              <Link to="/services">
+              <Link to={urlRoutes.SERVICER}>
                 <span>
                   Cases
                   <ChevronDownOutline
@@ -87,7 +88,7 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <Link to="/cases">Cases</Link>
+                  <Link to={urlRoutes.CASES}>Cases</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
                   <Link to="/case-detail">Case Detail</Link>
@@ -96,7 +97,7 @@ function Navbar() {
             </li>
 
             <li className="text-white p-4 min-w-max">
-              <Link to="/contact">Contact Us</Link>
+              <Link to={urlRoutes.CONTACT}>Contact Us</Link>
             </li>
           </ul>
         </div>
