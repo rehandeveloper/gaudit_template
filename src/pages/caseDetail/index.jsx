@@ -1,30 +1,27 @@
+import React from "react";
 import Hero from "../../component/common/Hero";
-import { COMPANY } from "../../lib/templateConstants";
-import image from "../../assets/bg-2.jpg";
 import { Link } from "react-router-dom";
-import AboutCompany from "../../component/AboutCompany";
-import CompanyStatus from "../../component/CompanyStatus";
+import image from "../../assets/bg-2.jpg";
 import { urlRoutes } from "../../routes";
-const AboutUs = () => {
+
+const CaseDetail = () => {
   return (
     <>
       <Hero
         imageHeight={"h-456"}
         image={image}
-        title={`About ${COMPANY}`}
+        title={`Case Detail`}
         description={
           <p>
             <Link to={urlRoutes.HOME} className="text-info">
               Home
             </Link>{" "}
-            / About Us
+            / Case Detail
           </p>
         }
       />
-      <AboutCompany />
-      <CompanyStatus />
     </>
   );
-}
+};
 
-export default AboutUs;
+export default CaseDetail;

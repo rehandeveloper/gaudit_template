@@ -5,26 +5,25 @@ import { Link } from "react-router-dom";
 import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
 import { urlRoutes } from "../../routes";
-const AboutUs = () => {
+const Services = () => {
   return (
     <>
       <Hero
         imageHeight={"h-456"}
         image={image}
-        title={`About ${COMPANY}`}
+        title={`Our Services`}
         description={
           <p>
             <Link to={urlRoutes.HOME} className="text-info">
               Home
             </Link>{" "}
-            / About Us
+            / Services
           </p>
         }
       />
-      <AboutCompany />
-      <CompanyStatus />
+      
     </>
   );
-}
+};
 
-export default AboutUs;
+export default Services;

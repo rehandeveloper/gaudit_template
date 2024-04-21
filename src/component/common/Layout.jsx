@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import { Outlet, RouterProvider } from "react-router-dom";
 import router from "../../routes";
-import Description from "./Description";
+// import Description from './Description';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Description } from "./Description";
 
 const Layout = () => {
   return (

@@ -1,6 +1,7 @@
 import React, { createRef, useState } from 'react'
 import { ChevronDownOutline } from 'react-ionicons'
 import { Link } from 'react-router-dom';
+import { urlRoutes } from '../../routes';
 
 function Navbar() {
    const [state, setState] = useState(false);
@@ -26,13 +27,13 @@ function Navbar() {
 
           <ul className="hidden gap-x-5 mx-40  lg:flex">
             <li className="text-white p-4 min-w-max">
-              <Link to="/">Home</Link>
+              <Link to={urlRoutes.HOME}>Home</Link>
             </li>
             <li className="text-white p-4 min-w-max">
-              <Link to="/about">About</Link>
+              <Link to={urlRoutes.ABOUT}>About</Link>
             </li>
             <li className="text-white relative group p-4  min-w-max">
-              <a href="#">
+              <Link to={urlRoutes.SERVICER}>
                 <span>
                   Services
                   <ChevronDownOutline
@@ -42,7 +43,7 @@ function Navbar() {
                     cssClasses={"inline mx-2 mb-1"}
                   />
                 </span>
-              </a>
+              </Link>
               <ul
                 className="
                     opacity-0 scale-y-0
@@ -55,24 +56,18 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <a href="#">Web Design</a>
+                  <Link to={urlRoutes.SERVICER}>Services</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <a href="#">Web Development</a>
-                </li>
-                <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <a href="#">Mobile Development</a>
-                </li>
-                <li className="text-white p-4 border-b-[1px]">
-                  <a href="#">Graphics Design</a>
+                  <Link to="/service-detail">Service Detail</Link>
                 </li>
               </ul>
             </li>
 
             <li className="text-white relative group p-4  min-w-max">
-              <a href="#">
+              <Link to={urlRoutes.SERVICER}>
                 <span>
-                  Services
+                  Cases
                   <ChevronDownOutline
                     color={"#fff"}
                     width={"15px"}
@@ -80,7 +75,7 @@ function Navbar() {
                     cssClasses={"inline mx-2 mb-1"}
                   />
                 </span>
-              </a>
+              </Link>
               <ul
                 className="
                     opacity-0 scale-y-0
@@ -93,22 +88,16 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <a href="#">Web Design</a>
+                  <Link to={urlRoutes.CASES}>Cases</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <a href="#">Web Development</a>
-                </li>
-                <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <a href="#">Mobile Development</a>
-                </li>
-                <li className="text-white p-4 border-b-[1px]">
-                  <a href="#">Graphics Design</a>
-                </li>
+                  <Link to="/case-detail">Case Detail</Link>
+                </li>  
               </ul>
             </li>
 
             <li className="text-white p-4 min-w-max">
-              <a href="#">Contact</a>
+              <Link to={urlRoutes.CONTACT}>Contact Us</Link>
             </li>
           </ul>
         </div>
