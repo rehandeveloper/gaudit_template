@@ -11,7 +11,7 @@ import ContactUs from "./pages/contactUs";
 export const urlRoutes = {
   HOME: "/",
   ABOUT: "/about",
-  SERVICER: "/services",
+  SERVICE: "/services",
   SERVICE_DETAIL: "/service-detail",
   CASES: "/cases",
   PRICING: "/pricing",
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: urlRoutes.SERVICER,
+        path: urlRoutes.SERVICE,
         element: <Services />,
       },
       {

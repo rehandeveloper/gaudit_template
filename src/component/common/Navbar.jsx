@@ -33,7 +33,7 @@ function Navbar() {
               <Link to={urlRoutes.ABOUT}>About</Link>
             </li>
             <li className="text-white relative group p-4  min-w-max">
-              <Link to={urlRoutes.SERVICER}>
+              <Link to={urlRoutes.SERVICE}>
                 <span>
                   Services
                   <ChevronDownOutline
@@ -56,16 +56,16 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <Link to={urlRoutes.SERVICER}>Services</Link>
+                  <Link to={urlRoutes.SERVICE}>Services</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <Link to="/service-detail">Service Detail</Link>
+                  <Link to={urlRoutes.SERVICE_DETAIL}>Service Detail</Link>
                 </li>
               </ul>
             </li>
 
             <li className="text-white relative group p-4  min-w-max">
-              <Link to={urlRoutes.SERVICER}>
+              <Link to={urlRoutes.SERVICE}>
                 <span>
                   Cases
                   <ChevronDownOutline
@@ -91,7 +91,7 @@ function Navbar() {
                   <Link to={urlRoutes.CASES}>Cases</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <Link to="/case-detail">Case Detail</Link>
+                  <Link to={urlRoutes.CASE_DETAIL}>Case Detail</Link>
                 </li>  
               </ul>
             </li>
