@@ -10,7 +10,7 @@ import {
 
 export function Logo() {
   return (
-    <div className="hidden gap-x-4 lg:flex">
+    <div className="flex gap-x-4">
       <div className="w-8 h-8 rounded-full cursor-pointer transition-colors ease-in-out duration-150 bg-primary-light hover:bg-primary grid place-items-center text-white">
         <LogoFacebook color={"#fff"} width={"15px"} height={"15px"} />
       </div>

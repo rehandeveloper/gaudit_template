@@ -3,6 +3,7 @@ import Hero from "../../component/common/Hero";
 import { Link } from "react-router-dom";
 import image from "../../assets/bg-2.jpg";
 import { urlRoutes } from "../../routes";
+import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
   return (
@@ -20,6 +21,7 @@ const ContactUs = () => {
           </p>
         }
       />
+      <ContactForm />
     </>
   );
 };
