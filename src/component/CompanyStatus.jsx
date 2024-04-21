@@ -2,10 +2,10 @@ import React from 'react'
 
 function CompanyStatus() {
   return (
-    <div className='w-full h-96 bg-red-900 fixed-image flex items-center p-28 my-28'>
+    <div className='w-full min-h-96 fixed-image flex justify-center items-center lg:p-28 p-14 my-28'>
 
-        <div className='flex items-center gap-20'>
-            <h1 className='text-white text-5xl font-bold tracking-wide leading-snug'>
+        <div className='flex flex-wrap justify-center items-center gap-20 '>
+            <h1 className='text-white lg:w-72 lg:text-left text-center w-full lg:text-5xl text-3xl font-bold tracking-wide leading-snug'>
             Our Company In Number
             </h1>
 

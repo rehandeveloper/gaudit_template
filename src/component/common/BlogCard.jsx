@@ -3,7 +3,7 @@ import { ArrowForwardOutline } from 'react-ionicons'
 
 function BlogCard() {
   return (
-        <div className="group relative w-full  h-[32rem]">
+        <div className="group relative w-full  min-h-[32rem] my-4">
           <div className="relative  w-full overflow-hidden rounded-t-2xl  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75  sm:h-64">
             <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." className="duration-500 transition-transform ease-in-out group-hover:scale-125 h-full w-full object-cover object-center"/>
           </div>

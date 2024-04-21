@@ -21,3 +21,21 @@
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
+
+.services .icon{
+  color: #00B6D6 !important;
+
+}
+.services.active .icon{
+  color: #fff !important;
+
+}
+.services:hover .icon{
+  color: #fff !important;
+
+}
+
+.services.active:hover .icon{
+  color: #00B6D6 !important;
+
+}
