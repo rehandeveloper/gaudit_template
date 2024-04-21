@@ -8,7 +8,7 @@
 }
 
 .hero-image{
-  background:  url("./assets/bg.jpg"), rgba(22, 22, 22, 0.407);
+  /* background:  url("./assets/bg.jpg"), rgba(22, 22, 22, 0.407); */
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;

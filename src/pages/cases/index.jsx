@@ -4,26 +4,24 @@ import image from "../../assets/bg-2.jpg";
 import { Link } from "react-router-dom";
 import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
-const AboutUs = () => {
+const Cases = () => {
   return (
     <>
       <Hero
         imageHeight={"h-456"}
         image={image}
-        title={`About ${COMPANY}`}
+        title={`Case Studies`}
         description={
           <p>
             <Link to="/" className="text-info">
               Home
             </Link>{" "}
-            / About Us
+            / Cases
           </p>
         }
       />
-      <AboutCompany />
-      <CompanyStatus />
     </>
   );
-}
+};
 
-export default AboutUs;
+export default Cases;

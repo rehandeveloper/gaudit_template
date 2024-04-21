@@ -2,10 +2,21 @@ import React from "react";
 import { ArrowUpOutline, BarChartOutline } from "react-ionicons";
 import AnimatedButton from "./AnimatedButton";
 
-function Hero({ subtitle, title, description , children}) {
+function Hero({
+  subtitle,
+  title,
+  description,
+  children,
+  image,
+  button,
+  imageHeight = "h-[600px]",
+}) {
   return (
     <>
-      <div className="relative w-full h-[600px] hero-image bg-cover bg-no-repeat bg-center object-cover lg:px-20 p-16 font-semibold ">
+      <div
+        className={`relative w-full ${imageHeight} hero-image bg-cover bg-no-repeat bg-center object-cover lg:px-20 p-16 font-semibold `}
+        style={{ backgroundImage: `url(${image})` }}
+      >
         <div className="w-full lg:w-1/2">
           <p className="text-primary-light-1 my-4">{subtitle}</p>
           <h1 className="w-full text-4xl  lg:text-6xl xl:text-7xl text-white lg:leading-tight xl:leading-tight leading-normal">
@@ -13,7 +24,7 @@ function Hero({ subtitle, title, description , children}) {
           </h1>
 
           <p className="text-muted font-thin my-8">{description}</p>
-          <AnimatedButton text={"discover more"} />
+          {button}
         </div>
       </div>
       {children}
