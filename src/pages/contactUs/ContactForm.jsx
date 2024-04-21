@@ -8,13 +8,11 @@ const ContactForm = () => {
     <div className="py-10 mx-20">
       <div className="grid lg:grid-cols-3 gap-10">
         <div className="col-span-2">
-          <p className="font-extrabold text-2xl">Send Us a Message</p>
+          <p className="font-extrabold text-2xl mb-10">Send Us a Message</p>
           <form action="." method="post" className="grid gap-3">
-            <div className="grid grid-rows-1">
-              <div className="flex gap-3">
-                <Input placeholder={"Name"} />
-                <Input placeholder={"Email"} />
-              </div>
+            <div className="grid col-span-2 gap-5 grid-cols-2 w-full">
+              <Input placeholder={"Name"} />
+              <Input placeholder={"Email"} />
             </div>
             <div className="grid col-span-2 gap-3">
               <Input placeholder={"Subject"} />
@@ -28,11 +26,13 @@ const ContactForm = () => {
           </form>
         </div>
         <div className="col-span-1">
-          <p className="font-extrabold text-xl text-info ms-10 mb-6">CONTACT US</p>
+          <p className="font-extrabold text-xl text-info ms-10 mb-6">
+            CONTACT US
+          </p>
 
           <Contact
             light
-            title='Get In Touch!'
+            title="Get In Touch!"
             subtitle={
               <>
                 {" "}
