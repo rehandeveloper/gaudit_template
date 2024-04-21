@@ -6,3 +6,18 @@
   font-family: 'Helvetica', 'sans-serif';
   font-size: clamp(12px, 15px, 1rem);
 }
+
+.hero-image{
+  background:  url("./assets/bg.jpg"), rgba(22, 22, 22, 0.407);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.fixed-image{
+  background:  url("./assets/bg-3.jpg"), rgba(22, 22, 22, 0.407);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
