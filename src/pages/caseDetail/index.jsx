@@ -3,6 +3,7 @@ import Hero from "../../component/common/Hero";
 import { Link } from "react-router-dom";
 import image from "../../assets/bg-2.jpg";
 import { urlRoutes } from "../../routes";
+import BlogCard from "../../component/common/BlogCard";
 
 const CaseDetail = () => {
   return (

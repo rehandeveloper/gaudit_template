@@ -8,10 +8,18 @@ function ChooseUs() {
 
     <div className='lg:w-6/12 w-full lg:order-first order-last my-32'>
         <p className='uppercase text-primary font-bold tracking-wide text-xl'>WHY CHOOSE US</p>
-        <h1 className='text-5xl font-bold my-10 '>Accounting With Unity</h1>
-        <p className='text-secondary'>Proin laoreet nisi vitae pharetra mattis. Etiam luctus suscipit velit vitae ultricies mixuen. Augue molestie a etiam quis tincidunt est, et efficitur ipsum nunc bibendum ut risus et vehicula proin tempus tellus diam laoreet justo erat tempus.</p>
+        <h1 className="text-5xl font-bold my-10 leading-snug">
+          Discover the Global Strategy Finance Consultants difference
+        </h1>
+        <p className="text-secondary leading-relaxed">
+          Discover the Global Strategy Finance Consultants difference - Our
+          client-centric approach, combined with our deep industry knowledge and
+          technical expertise, sets us apart. We're not just consultants; we're
+          your partners in achieving business excellence.
+        </p>
 
-        <div className='flex flex-wrap my-10 gap-x-16'>
+
+        <div className='flex lg:flex-nowrap flex-wrap my-10 gap-x-16'>
             <div className='flex'>
                 <i></i>
                 <div>

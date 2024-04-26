@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
 import { urlRoutes } from "../../routes";
+import BlogCard from "../../component/common/BlogCard";
+import Projects from "./Projects";
+import ManageFinances from "./ManageFinances";
 const Cases = () => {
   return (
     <>
@@ -21,6 +24,8 @@ const Cases = () => {
           </p>
         }
       />
+        <Projects/>
+        <ManageFinances/>
     </>
   );
 };

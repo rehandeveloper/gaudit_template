@@ -12,26 +12,8 @@ import { Logo } from "./Description";
 import { Link } from "react-router-dom";
 import { urlRoutes } from "../../routes";
 import cx from "classnames"
-function Right({ title, to }) {
-  return (
-    <div className="flex text-white gap-3 font-extrabold text-lg">
-      <ChevronForwardOutline
-        color={"#51c5ff"}
-        title={title}
-        height="23px"
-        width="23px"
-      />
-      <Link to={to}>
-        <div className="hover:text-blue-300 text-white">{title}</div>
-      </Link>
-    </div>
-  );
-}
+import { Right } from "./list/RightArrowListItem";
 
-Right.propTypes = {
-  title: PropTypes.any,
-  to: PropTypes.any,
-};
 
 export function Contact({ light, title = "Information",subtitle }) {
   return (
@@ -72,7 +54,7 @@ export function Contact({ light, title = "Information",subtitle }) {
                 Email
               </p>
               <p className={cx({ "text-gray-200": !light })}>
-                hello@awesomesite.com
+                hello@gsfc.com
               </p>
             </div>
           </li>

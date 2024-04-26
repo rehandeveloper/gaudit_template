@@ -10,13 +10,13 @@ import Coaching from '../../component/Coaching.';
 
 const Home = () => {
   return (
-    <div className='bg-white w-full overflow-hidden'>
+    <div className="bg-white w-full overflow-hidden">
       <HomeHero />
       <AboutCompany />
       <Coaching/>
       <CompanyStatus />
-      <OurServices/>
-      <ChooseUs/>
+      <OurServices />
+      <ChooseUs />
       <Faq />
       <Blog />
     </div>
