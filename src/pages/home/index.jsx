@@ -5,7 +5,6 @@ import Faq from '../../component/Faq';
 import Blog from '../../component/Blog';
 import "./home.css";
 import OurServices from '../../component/Services';
-import ChooseUs from '../../component/ChooseUs';
 
 const Home = () => {
   return (
