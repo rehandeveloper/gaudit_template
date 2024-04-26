@@ -103,6 +103,9 @@ function Navbar() {
             </li>
 
             <li className="text-white p-4 min-w-max">
+              <Link to={urlRoutes.TEAMS}>Teams</Link>
+            </li>
+            <li className="text-white p-4 min-w-max">
               <Link to={urlRoutes.CONTACT}>Contact Us</Link>
             </li>
           </ul>

@@ -8,7 +8,7 @@ function ManageFinances({square=true, parallax = true }) {
         "justify-center fixed-image items-center lg:p-28 p-14 my-28",
         {
           parallax: parallax,
-          "w-96 sm:w-full my-5  rounded-xl lg:p-8": square,
+          "w-12/12 my-5  rounded-xl lg:p-8": square,
         }
       )}
     >

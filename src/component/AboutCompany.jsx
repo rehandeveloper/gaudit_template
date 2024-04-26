@@ -4,7 +4,7 @@ import unity from "./../assets/bg-2.jpg";
 import { ChevronForwardOutline, Play } from 'react-ionicons';
 import AnimatedButton from './common/AnimatedButton';
 
-function AboutCompany() {
+function AboutCompany({ hideLink }) {
   return (
     <div className="w-full min-h-screen lg:px-24 py-10 lg:flex block gap-x-24">
       <div className="lg:w-1/2 w-full h-full p-10 relative">
@@ -78,51 +78,8 @@ function AboutCompany() {
                 their sustainable growth and success.
               </p>
             </div>
-
-            {/* <div>
-              <h1 className="lg:text-3xl text-xl font-semibold">Our Mission</h1>
-              <ul className="my-8">
-                <li className="my-2">
-                  <ChevronForwardOutline
-                    color={"#000"}
-                    cssClasses={"text-primary-light inline-block mb-1 mr-4"}
-                  />
-                  <span className="text-secondary">
-                    Nulla congue aliquet vulputate
-                  </span>
-                </li>
-                <li className="my-2">
-                  <ChevronForwardOutline
-                    color={"#000"}
-                    cssClasses={"text-primary-light inline-block mb-1 mr-4"}
-                  />
-                  <span className="text-secondary">
-                    Nulla congue aliquet vulputate
-                  </span>
-                </li>
-                <li className="my-2">
-                  <ChevronForwardOutline
-                    color={"#000"}
-                    cssClasses={"text-primary-light inline-block mb-1 mr-4"}
-                  />
-                  <span className="text-secondary">
-                    Nulla congue aliquet vulputate
-                  </span>
-                </li>
-                <li className="my-2">
-                  <ChevronForwardOutline
-                    color={"#000"}
-                    cssClasses={"text-primary-light inline-block mb-1 mr-4"}
-                  />
-                  <span className="text-secondary">
-                    Nulla congue aliquet vulputate
-                  </span>
-                </li>
-              </ul>
-            </div> */}
           </div>
-
-          <AnimatedButton text={"More About Us"} />
+          {!hideLink && <AnimatedButton text={"More About Us"} />}
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import ServiceDetail from "./pages/serviceDetail";
 import Cases from "./pages/cases";
 import CaseDetail from "./pages/caseDetail";
 import ContactUs from "./pages/contactUs";
+import Teams from "./pages/teams";
 
 export const urlRoutes = {
   HOME: "/",
@@ -19,6 +20,7 @@ export const urlRoutes = {
   FAQ: "/faq",
   CASE_DETAIL: "/case-detail",
   CONTACT: "/contact",
+  TEAMS: "/teams",
 }; 
 
 
@@ -58,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: urlRoutes.CONTACT,
         element: <ContactUs />,
+      },
+      {
+        path: urlRoutes.TEAMS,
+        element: <Teams />,
       },
     ],
   },
