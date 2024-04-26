@@ -20,6 +20,7 @@ import Input from "../../component/formElement/Input";
 import Textarea from "../../component/formElement/Textarea";
 import { ContactFormComponent } from "../contactUs/ContactForm";
 import ServiceContent from "./ServiceContent";
+import AboutMySelf from "./AboutMyself";
 
 const ServiceDetail = () => {
   const [serviceID, setServiceID] = useState(1)
@@ -38,23 +39,31 @@ const ServiceDetail = () => {
           </p>
         }
       />
-      <section className="block lg:flex mx-20 lg:mx-48 py-24 gap-x-11">
-        <div className="w-11/12">
-          <ServiceContent data={serviceData.find((item)=>item.id===serviceID)}/>
+      <section className="block lg:flex mx-5 lg:mx-10 xl:mx-48 py-24 gap-x-11">
+        <div className="w-12/12">
+          <ServiceContent
+            data={serviceData.find((item) => item.id === serviceID)}
+          />
         </div>
-        <div className="">
-          <div className="card bg-info p-7 w-100 rounded-xl">
+        <div className="max-w-6/12">
+          <div className="card bg-info p-7 w-100 rounded-xl mt-5">
             <h1 className="font-extrabold text-2xl text-white pb-3">
               Other Services
             </h1>
             <ul>
-              {serviceData.map((item, index) => (
-                <Right title={item.title} to={urlRoutes.HOME} key={index} handleClick={(e)=>{
-                  e.preventDefault();
-                  setServiceID(item.id);
-                  
-                }} />
-              ))}
+              {serviceData
+                .filter((item) => item.id !== serviceID)
+                .map((item, index) => (
+                  <Right
+                    title={item.title}
+                    to={urlRoutes.HOME}
+                    key={index}
+                    handleClick={(e) => {
+                      e.preventDefault();
+                      setServiceID(item.id);
+                    }}
+                  />
+                ))}
             </ul>
             {/* {
               serviceData.map(item=> )

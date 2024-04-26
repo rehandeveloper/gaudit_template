@@ -8,7 +8,9 @@ import {
   PhonePortraitOutline,
 } from "react-ionicons";
 import { COMPANY } from "../../lib/templateConstants";
-import { Logo } from "./Description";
+import { SocialLinks } from "./Description";
+import logo from "./../../assets/logoOnly.png";
+
 import { Link } from "react-router-dom";
 import { urlRoutes } from "../../routes";
 import cx from "classnames"
@@ -17,7 +19,7 @@ import { Right } from "./list/RightArrowListItem";
 
 export function Contact({ light, title = "Information",subtitle }) {
   return (
-    <div className="grid grid-rows-1 px-10">
+    <div className="grid grid-rows-1 md:px-10">
       <div className="row-span-1">
         <ul>
         <p
@@ -82,23 +84,22 @@ export function Contact({ light, title = "Information",subtitle }) {
 const Footer = () => {
   return (
     <footer className="w-full justify-center lg:justify-between pt-20 pb-10 px-5 sm:px-10 lg:px-20  shadow-md bg-info">
-      <div className="grid w-full grid-cols-4  gap-10 mx-5">
+      <div className="grid w-full grid-cols-4  gap-10 mx-5 max-h-fit">
         <div className=" grid-rows-3 gap-10 grid col-span-4 sm:col-span-1 md:col-span-4 lg:col-span-1">
-          <div>
-            <p className="font-black text-6xl text-white">{COMPANY}</p>
-            <font className="w-full">slogan of the company</font>
-          </div>
-          <div>
+          <div className="row-span-2 ">
+            <p className="font-black text-6xl text-white">
+              <img src={logo} alt="gaudit logo" width="250px" />
+            </p>
+            {/* <font className="w-full">slogan of the company</font> */}
             <p className=" text-white">
               Donec neque massa, faucibus nec lorem vitae feugiat pharetra sem.
               Nulla elementum eget lectus dapibus amatug mix finibus.
             </p>
           </div>
-          <div className="flex gap-2">
-            <Logo />
-          </div>
+          
+            <SocialLinks />
         </div>
-        <div className="hidden grid-rows-3  sm:flex">
+        <div className="col-span-4 md:col-span-1 grid-rows-3  sm:flex">
           <div className="row-span-2">
             <p className="text-3xl mb-7 text-white font-extrabold ">
               Quick Links
@@ -111,13 +112,14 @@ const Footer = () => {
                 <Right title={"Cases"} to={urlRoutes.CASES} />
                 <Right title={"Pricing"} to={urlRoutes.PRICING} />
                 <Right title={"FAQs"} to={urlRoutes.FAQ} />
+                <Right title={"Teams"} to={urlRoutes.TEAMS} />
                 <Right title={"Contact Us"} to={urlRoutes.CONTACT} />
               </li>
             </ul>
           </div>
           <div></div>
         </div>
-        <div className="hidden grid-rows-2  sm:flex">
+        <div className="col-span-4 md:col-span-1 grid-rows-1  sm:flex">
           <div className="row-span-2">
             <p className="text-3xl mb-7 text-white font-extrabold ">Services</p>
 
@@ -132,12 +134,13 @@ const Footer = () => {
                 <Right title={"Business Advisory"} />
                 <Right title={"FAQs"} />
                 <Right title={"Outsourced CFO"} />
+                <Right title={"Teams"} />
               </li>
             </ul>
           </div>
           <div></div>
         </div>
-        <Contact/>
+        <Contact />
 
         <div className="col-span-4 w-full border-t border-gray-300"></div>
         <div className="text-center col-span-4 text-white">

@@ -8,9 +8,9 @@ import {
   MailOutline,
 } from "react-ionicons";
 
-export function Logo() {
+export function SocialLinks() {
   return (
-    <div className="flex gap-x-4">
+    <div className="flex gap-x-4 h-10">
       <div className="w-8 h-8 rounded-full cursor-pointer transition-colors ease-in-out duration-150 bg-primary-light hover:bg-primary grid place-items-center text-white">
         <LogoFacebook color={"#fff"} width={"15px"} height={"15px"} />
       </div>
@@ -54,7 +54,7 @@ export function Description() {
         </span>
       </div>
 
-      <Logo/>
+      <SocialLinks/>
     </div>
   );
 }

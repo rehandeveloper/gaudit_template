@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
 import { urlRoutes } from "../../routes";
+import AboutMySelf from "../serviceDetail/AboutMyself";
 const AboutUs = () => {
   return (
     <>
@@ -21,8 +22,9 @@ const AboutUs = () => {
           </p>
         }
       />
-      <AboutCompany />
+      <AboutCompany hideLink />
       <CompanyStatus />
+      <AboutMySelf />
     </>
   );
 }

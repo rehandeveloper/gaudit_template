@@ -1,2 +1,2 @@
 
-export const COMPANY="Gaudit"
+export const COMPANY = "Global Strategy Finance Consultants";
