@@ -2,6 +2,7 @@ import React, { createRef, useState } from 'react'
 import { ChevronDownOutline } from 'react-ionicons'
 import { Link } from 'react-router-dom';
 import { urlRoutes } from '../../routes';
+import logo from "./../../assets/logo.svg";
 
 function Navbar() {
    const [state, setState] = useState(false);
@@ -16,13 +17,18 @@ function Navbar() {
     <div className="bg-primary h-24 flex items-center px-32 relative">
       <div className="w-full flex justify-between items-center">
         <div className="flex justify-start items-center">
-          <div className="logo">
-            <a href="/">
+          <div className="logo relative">
+            <a href="/" className="" >
               <img
-                src="https://www.gaudit.com/wp-content/uploads/2020/03/gaudit-logo-white.png"
+                src={logo}
                 alt="gaudit logo"
+                width="150px"
               />
             </a>
+         
+           
+          
+
           </div>
 
           <ul className="hidden gap-x-5 mx-40  lg:flex">

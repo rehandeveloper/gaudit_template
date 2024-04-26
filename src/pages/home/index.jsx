@@ -8,12 +8,12 @@ import OurServices from '../../component/Services';
 
 const Home = () => {
   return (
-    <div className='bg-white w-full'>
+    <div className='bg-white w-full overflow-hidden'>
       <HomeHero />
       <AboutCompany />
       <CompanyStatus />
       <OurServices/>
-      {/* <ChooseUs/> */}
+      <ChooseUs/>
       <Faq />
       <Blog />
     </div>

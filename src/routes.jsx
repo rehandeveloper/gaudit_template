@@ -12,7 +12,8 @@ export const urlRoutes = {
   HOME: "/",
   ABOUT: "/about",
   SERVICE: "/services",
-  SERVICE_DETAIL: "/service-detail",
+  SERVICE_DETAIL:"/serservice-detail/",
+  SERVICE_DETAIL_ID: "/service-detail/:id",
   CASES: "/cases",
   PRICING: "/pricing",
   FAQ: "/faq",
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       },
       {
         path: urlRoutes.SERVICE_DETAIL,
+        element: <ServiceDetail />,
+      },
+      {
+        path: urlRoutes.SERVICE_DETAIL_ID,
         element: <ServiceDetail />,
       },
       {
