@@ -14,7 +14,7 @@ function Navbar() {
   
 
   return (
-    <div className="bg-primary h-24 flex items-center px-32 relative">
+    <div className="bg-primary h-24 flex items-center md:px-32 px-5 relative">
       <div className="w-full flex justify-between items-center">
         <div className="flex justify-start items-center">
           <div className="logo relative">
@@ -119,7 +119,7 @@ function Navbar() {
       </div>
 
       {state ? (
-        <nav className="bg-primary w-full  absolute top-24 left-0 z-10">
+        <nav className="bg-primary w-full  absolute top-24 left-0 z-10 transition-transform duration-300 scale-0">
           <ul className="flex flex-col items-center pt-16">
             <li>
               <a href="#" className="py-2 px-4 block hover:bg-gray-200">

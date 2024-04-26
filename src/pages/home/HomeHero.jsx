@@ -12,19 +12,21 @@ const HomeHero = () => {
       title={"Global Strategy Finance Consultants"}
       description={`We offer specialized Strategy Mastery Program & Strategic Finance coaching to our clients, designed to enhance their career trajectories and empower them to expand or establish their own businesses. Our expert guidance is tailored to ensure sustainable growth and long-term success in their professional endeavors.`}
       button={<AnimatedButton text={"discover more"} />}
+      animate={true}
     >
-      <div className="relative w-full md:h-48 over">
+      <motion.div 
+      initial={{ opacity: 0, x: "100%" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 1.5,
+        opacity: {
+          duration: 0.5,
+        },
+      }}
+      className="relative w-full md:h-48 over">
         <div className="md:absolute relative md:-top-[50%] -top-20 w-full translate-y-[10%] md:px-24 px-10">
           <div className="md:flex block gap-10 w-full lg:justify-end">
             <motion.div
-              initial={{ opacity: 0, x: "700px" }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 1.5,
-                opacity: {
-                  duration: 0.5,
-                },
-              }}
               className="md:w-96 w-full h-52 bg-primary rounded-lg flex  items-start p-16 gap-x-4 "
             >
               <i>
@@ -70,7 +72,7 @@ const HomeHero = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Hero>
   );
 }

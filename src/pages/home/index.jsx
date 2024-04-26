@@ -10,7 +10,7 @@ import Coaching from '../../component/Coaching.';
 
 const Home = () => {
   return (
-    <div className="bg-white w-full overflow-hidden">
+    <div className="bg-white w-full overflow-x-hidden">
       <HomeHero />
       <AboutCompany />
       <Coaching/>
