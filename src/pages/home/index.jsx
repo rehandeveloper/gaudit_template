@@ -5,15 +5,16 @@ import Faq from '../../component/Faq';
 import Blog from '../../component/Blog';
 import "./home.css";
 import OurServices from '../../component/Services';
+import ChooseUs from '../../component/ChooseUs';
 
 const Home = () => {
   return (
-    <div className='bg-white w-full overflow-hidden'>
+    <div className="bg-white w-full overflow-hidden">
       <HomeHero />
       <AboutCompany />
       <CompanyStatus />
-      <OurServices/>
-      <ChooseUs/>
+      <OurServices />
+      <ChooseUs />
       <Faq />
       <Blog />
     </div>
