@@ -6,12 +6,14 @@ import Blog from '../../component/Blog';
 import "./home.css";
 import OurServices from '../../component/Services';
 import ChooseUs from '../../component/ChooseUs';
+import Coaching from '../../component/Coaching.';
 
 const Home = () => {
   return (
     <div className='bg-white w-full overflow-hidden'>
       <HomeHero />
       <AboutCompany />
+      <Coaching/>
       <CompanyStatus />
       <OurServices/>
       <ChooseUs/>
