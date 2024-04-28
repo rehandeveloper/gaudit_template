@@ -35,7 +35,7 @@ function ServiceCard({item, index}) {
         
     };
     const navigate = useNavigate();
-    const {id,label, desc, Icon, active=false} = item;
+    const { slug,  title, description, Icon, active = false } = item;
   return (
     <motion.div
     variants={cardVariant}
@@ -55,20 +55,20 @@ function ServiceCard({item, index}) {
             "font-bold text-2xl my-4",
             { 'group-hover:text-black text-white ': active},
             { 'group-hover:text-white text-black': !active},
-            ) }>{label}</h4>
+            ) }>{title}</h4>
         <p className={
-            classNames({
+            classNames("line-clamp-4",{
                 'group-hover:text-secondary text-white': active},
                { 'group-hover:text-white text-secondary': !active}
             )
         
     }
         >
-            {desc}
+            {description}
         </p>
 
         <button 
-        onClick={()=> navigate(`/service-detail/${id}`)}
+        onClick={()=> navigate(`/service-detail/${slug}`)}
         className={classNames('absolute bottom-0 py-5 uppercase mt-5 transition-transform duration-300 hover:-translate-y-2',
         { "group-hover:text-primary-light text-white":active},
         { "group-hover:text-white text-primary-light":!active},

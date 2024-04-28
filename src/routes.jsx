@@ -9,13 +9,14 @@ import CaseDetail from "./pages/caseDetail";
 import ContactUs from "./pages/contactUs";
 import Teams from "./pages/teams";
 import Member from "./pages/member";
+import { Terms, Policy } from "./pages/termsAndPolicies";
 
 export const urlRoutes = {
   HOME: "/",
   ABOUT: "/about",
   SERVICE: "/services",
-  SERVICE_DETAIL:"/serservice-detail/",
-  SERVICE_DETAIL_ID: "/service-detail/:id",
+  SERVICE_DETAIL: "/service-detail/",
+  SERVICE_DETAIL_ID: "/service-detail/:slug",
   CASES: "/cases",
   PRICING: "/pricing",
   FAQ: "/faq",
@@ -23,6 +24,8 @@ export const urlRoutes = {
   CONTACT: "/contact",
   TEAMS: "/teams",
   Member: "/teams/:member",
+  TERMS: "/terms-and-conditions",
+  POLICY: "/privacy-policy",
 }; 
 
 
@@ -66,6 +69,14 @@ const router = createBrowserRouter([
       {
         path: urlRoutes.TEAMS,
         element: <Teams />,
+      },
+      {
+        path: urlRoutes.TERMS,
+        element: <Terms />,
+      },
+      {
+        path: urlRoutes.POLICY,
+        element: <Policy />,
       },
       {
         path: urlRoutes.Member,

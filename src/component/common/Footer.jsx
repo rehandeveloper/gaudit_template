@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import { urlRoutes } from "../../routes";
 import cx from "classnames"
 import { Right } from "./list/RightArrowListItem";
+import { serviceData } from "../../data/services";
 
 
 export function Contact({ light, title = "Information",subtitle }) {
@@ -125,16 +126,11 @@ const Footer = () => {
 
             <ul>
               <li>
-                <Right title={"Bookkeeping"} />
-                <Right title={"Payroll Services"} />
-                <Right title={"Tax Planning"} />
-                <Right title={"Audit & Assurance"} />
-                <Right title={"Financial Statement"} />
-                <Right title={"Tech Consulting"} />
-                <Right title={"Business Advisory"} />
-                <Right title={"FAQs"} />
-                <Right title={"Outsourced CFO"} />
-                <Right title={"Teams"} />
+                {serviceData.map(item=>
+                  <Right title={item.title} key={item.slug} to={urlRoutes.SERVICE_DETAIL_ID.replace(":slug",item.slug)}/>
+                )}
+                <Right title={"Terms & Conditions"} to={urlRoutes.TERMS}/>
+                <Right title={"Privacy Policy"} to={urlRoutes.POLICY}/>
               </li>
             </ul>
           </div>

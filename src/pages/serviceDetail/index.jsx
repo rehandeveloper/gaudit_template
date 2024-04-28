@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Hero from "../../component/common/Hero";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import image from "../../assets/bg-2.jpg";
 import { urlRoutes } from "../../routes";
 import { serviceData } from "../../data/services";
@@ -23,7 +23,7 @@ import ServiceContent from "./ServiceContent";
 import AboutMySelf from "./AboutMyself";
 
 const ServiceDetail = () => {
-  const [serviceID, setServiceID] = useState(1)
+  const { slug = "accounting-review-program" } = useParams();
   return (
     <>
       <Hero
@@ -42,7 +42,7 @@ const ServiceDetail = () => {
       <section className="block lg:flex mx-5 lg:mx-10 xl:mx-48 py-24 gap-x-11">
         <div className="w-12/12">
           <ServiceContent
-            data={serviceData.find((item) => item.id === serviceID)}
+            data={serviceData.find((item) => item.slug === slug||"accounting-review-program")}
           />
         </div>
         <div className="max-w-6/12">
@@ -52,16 +52,12 @@ const ServiceDetail = () => {
             </h1>
             <ul>
               {serviceData
-                .filter((item) => item.id !== serviceID)
+                .filter((item) => item.slug !== slug||"accounting-review-program")
                 .map((item, index) => (
                   <Right
                     title={item.title}
-                    to={urlRoutes.HOME}
+                    to={urlRoutes.SERVICE_DETAIL_ID.replace(":slug", item.slug)}
                     key={index}
-                    handleClick={(e) => {
-                      e.preventDefault();
-                      setServiceID(item.id);
-                    }}
                   />
                 ))}
             </ul>
