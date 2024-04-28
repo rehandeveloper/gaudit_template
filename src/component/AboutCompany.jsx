@@ -3,11 +3,23 @@ import businness from "./../assets/bg-1.jpg";
 import unity from "./../assets/bg-2.jpg";
 import { ChevronForwardOutline, Play } from 'react-ionicons';
 import AnimatedButton from './common/AnimatedButton';
+import {motion} from "framer-motion";
 
 function AboutCompany({ hideLink }) {
   return (
     <div className="w-full min-h-screen lg:px-24 py-10 lg:flex block gap-x-24">
-      <div className="lg:w-1/2 w-full h-full p-10 relative">
+      <motion.div
+       initial={{ opacity: 0, x: "-110%" }}
+       whileInView={{ opacity: 1, x: 0 }}
+       transition={{
+        delay:0.2,
+         duration: 1.5,
+         opacity: {
+           duration: 1,
+         },
+       }}
+       viewport={{once:true,}}
+      className="lg:w-1/2 w-full h-full p-10 relative">
         <img
           src={businness}
           width={200}
@@ -29,13 +41,23 @@ function AboutCompany({ hideLink }) {
             </button>
           </span>
         </div>
-      </div>
+      </motion.div>
       <div className="lg:w-1/2 w-full h-full">
         <div className="p-12">
           <p className="text-primary font-medium text-xl">ABOUT COMPANY</p>
-          <h1 className="text-black lg:text-5xl text-2xl leading-loose font-semibold my-4">
+          <motion.h1 
+           initial={{ opacity: 0, y: "100%" }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+             duration: 1.5,
+             opacity: {
+               duration: 1,
+             },
+           }}
+           viewport={{once:true,}}
+          className="text-black lg:text-5xl text-2xl leading-loose font-semibold my-4">
             Strategic partner for Finance and Business Strategy.
-          </h1>
+          </motion.h1>
           <p className="text-secondary my-2">
             Your strategic partner in navigating the complexities of Finance and
             Business Strategy. We offer comprehensive solutions tailored to your
@@ -50,8 +72,8 @@ function AboutCompany({ hideLink }) {
               <h1 className="lg:text-3xl text:xl font-semibold">
                 {" "}
                 <ChevronForwardOutline
-                  color={"#000"}
-                  cssClasses={"text-primary-light inline-block mb-1 mr-4"}
+                  color={"#00B6D6"}
+                  cssClasses={"inline-block mb-1 mr-4"}
                 />
                 Our Vision
               </h1>
@@ -67,7 +89,7 @@ function AboutCompany({ hideLink }) {
               <h1 className="lg:text-3xl text:xl font-semibold">
                 {" "}
                 <ChevronForwardOutline
-                  color={"#000"}
+                  color={"#00B6D6"}
                   cssClasses={"text-primary-light inline-block mb-1 mr-4"}
                 />
                 Our Mission

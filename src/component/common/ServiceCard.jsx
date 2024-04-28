@@ -2,13 +2,45 @@ import classNames from 'classnames'
 import React from 'react'
 import { ArrowForwardOutline } from 'react-ionicons'
 import { useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion"
+import { delay, motion } from "framer-motion"
 
-function ServiceCard({item}) {
+function ServiceCard({item, index}) {
+
+    const cardVariant = {
+
+        visible: {
+            x:   0,
+            y:  0,
+           
+            opacity: 1,
+            scale:1,
+            rotate: 0,
+            transition: {
+                type: "spring",
+                stiffness: 60,
+                mass: 0.2
+                
+
+                // remove delay: 0.3,
+              }
+        },
+        hidden: {
+            x: index %2 ==0?"-10%" : "50%",
+            y: !index %2 ==0?"-10%" : "50%",
+            opacity: 0,
+            scale:0,
+            rotate: (5 * index) %2? -45 * index: 45 * index,
+        },
+       
+        
+    };
     const navigate = useNavigate();
     const {id,label, desc, Icon, active=false} = item;
   return (
     <motion.div
+    variants={cardVariant}
+    whileInView="visible"
+    initial="hidden"
     className={classNames(
     "relative group w-full min-h-64 p-8 pb-20  rounded-lg border border-primary services",
    { 'hover:bg-white bg-primary transition-colors active': active},

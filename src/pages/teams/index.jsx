@@ -33,13 +33,14 @@ const Teams = () => {
             return (
               <div key={index} className="mt-10">
                 <div className="max-w-96">
-                  <div className="rounded-lg border border-info bg-white px-4 pt-8 pb-10">
+                  <div className="rounded-lg border border-info bg-white px-4 pt-8 pb-10 min-h-96">
                     <div className="relative mx-auto w-36 rounded-full">
                       <span className="absolute right-0 m-3 h-3 w-3 rounded-full bg-green-500 ring-2 ring-green-300 ring-offset-2"></span>
                       <img
-                        className="mx-auto h-auto w-full rounded-full"
+                        className="mx-auto h-36 w-36 rounded-full object-cover"
                         src={item.profilePic}
                         alt={item.name}
+                        width={50}
                       />
                     </div>
                     <h1 className="my-1 text-center text-xl font-bold leading-8 text-gray-900">
@@ -66,7 +67,9 @@ const Teams = () => {
                         <span className="ml-auto">Apr 08, 2022</span>
                       </li>
                     </ul> */}
+                    
                   </div>
+                 
                 </div>
               </div>
             );

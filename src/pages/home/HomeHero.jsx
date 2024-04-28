@@ -23,6 +23,7 @@ const HomeHero = () => {
           duration: 0.5,
         },
       }}
+      viewport={{ once: true }}
       className="relative w-full md:h-48 over">
         <div className="md:absolute relative md:-top-[50%] -top-20 w-full translate-y-[10%] md:px-24 px-10">
           <div className="md:flex block gap-10 w-full lg:justify-end">

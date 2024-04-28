@@ -1,8 +1,26 @@
 import React from 'react'
 import ServiceCard from './common/ServiceCard'
-import { servicesData } from '../utils/constant/data'
+import { servicesData } from '../utils/constant/data';
+import {motion} from 'framer-motion';
 
 function OurServices() {
+
+  const boxVariant = {
+    hidden: {
+        x: "-100%", //move out of the site
+    },
+    visible: {
+        x: 0, // bring it back to nrmal
+        transition: {
+          delayChildren: 0.5, // this will set a delay before the children start animating
+          staggerChildren: 0.3 // this will set the time inbetween children animation
+        }
+      
+    },
+   
+};
+
+
 
   return (
     <div className='w-full min-h-screen p-10'>
@@ -11,16 +29,21 @@ function OurServices() {
         <p className='text-secondary text-center md:w-3/6 mx-auto'>
         Sed tincidunt accumsan lacus nec bibendum sapien aliquet ut suspendisse pharetra. Finibus condimentum aenean lacinia sem metus Integer.
         </p>
-        <div className='grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-flow-row lg:p-20 my-8 md:my-10'>
+        <motion.div
+        
+       layout={boxVariant}
+       whileInView="visible"
+       initial="hidden"
+        className='grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-flow-row lg:p-20 my-8 md:my-10'>
 
             {
-                servicesData.map(item=><ServiceCard key={item.id} item ={item}/> )
+                servicesData.map((item, index)=><ServiceCard key={item.id} item ={item} index={index}/> )
             }
 
         
         
             
-        </div>
+        </motion.div>
         
        
 
