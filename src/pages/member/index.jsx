@@ -4,7 +4,6 @@ import image from "../../assets/bg-2.jpg";
 import { Link, useParams } from 'react-router-dom';
 import { urlRoutes } from '../../routes';
 import AboutMySelf from '../serviceDetail/AboutMyself';
-import { akritiImage } from '../../data/teams';
 
 const Member = () => {
    const {member} =  useParams()

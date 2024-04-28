@@ -56,11 +56,16 @@ export const teamsData = [
         <p className="text-secondary my-2">
           You can access a variety of free templates to assist you in your
           studies, work, or professional development. Feel free to download them
-          from linkedin.com/in/iman-hamdan-acca-657045118
+          from{" "}
+          <a className="text-info font-extrabold" href="https://linkedin.com/in/iman-hamdan-acca-657045118">
+            linkedin.com/in/iman-hamdan-acca-657045118
+          </a>
         </p>
         <p className="text-secondary my-2">
           You can stay updated with more tips and insights in those areas by
-          following me on LinkedIn. Feel free to connect with me there.
+          following me on{" "}
+          <a className="text-info font-extrabold" href="https://linkedin.com/in/iman-hamdan-acca-657045118">LinkedIn</a>.
+          Feel free to connect with me there.
         </p>
       </>
     ),
@@ -105,11 +110,18 @@ export const teamsData = [
         <p className="text-secondary my-2">
           You can access a variety of free templates to assist you in your
           studies, work, or professional development. Feel free to download them
-          from linkedin.com/in/iman-hamdan-acca-657045118
+          from{" "}
+          <a className="text-info font-extrabold" href="https://linkedin.com/in/iman-hamdan-acca-657045118">
+            linkedin.com/in/iman-hamdan-acca-657045118
+          </a>
         </p>
         <p className="text-secondary my-2">
           You can stay updated with more tips and insights in those areas by
-          following me on LinkedIn. Feel free to connect with me there.
+          following me on{" "}
+          <a className="text-info font-extrabold" href="https://linkedin.com/in/iman-hamdan-acca-657045118">
+            LinkedIn
+          </a>
+          . Feel free to connect with me there.
         </p>
       </>
     ),

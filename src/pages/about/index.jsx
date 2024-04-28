@@ -6,7 +6,6 @@ import AboutCompany from "../../component/AboutCompany";
 import CompanyStatus from "../../component/CompanyStatus";
 import { urlRoutes } from "../../routes";
 import AboutMySelf from "../serviceDetail/AboutMyself";
-import { akritiImage } from "../../data/teams";
 const AboutUs = () => {
   return (
     <>

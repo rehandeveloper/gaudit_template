@@ -4,8 +4,8 @@ import AnimatedButton from '../../component/common/AnimatedButton';
 
 import businness from "../../assets/bg-1.jpg";
 import unity from "../../assets/bg-2.jpg";
-import { akritiImage, teamsData } from '../../data/teams';
 import { urlRoutes } from '../../routes';
+import { teamsData } from '../../data/teams';
 const AboutMySelf = ({ actorSlug }) => {
   const my = teamsData.find((item) => (item.slug == actorSlug))
   return (
