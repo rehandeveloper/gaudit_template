@@ -1,7 +1,8 @@
 import React from 'react'
 import ServiceCard from './common/ServiceCard'
-import { servicesData } from '../utils/constant/data';
+// import { servicesData } from '../utils/constant/data';
 import {motion} from 'framer-motion';
+import { serviceData } from '../data/services';
 
 function OurServices() {
 
@@ -37,7 +38,7 @@ function OurServices() {
         className='grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-flow-row lg:p-20 my-8 md:my-10'>
 
             {
-                servicesData.map((item, index)=><ServiceCard key={item.id} item ={item} index={index}/> )
+                serviceData.map((item, index)=><ServiceCard key={item.id} item ={item} index={index}/> )
             }
 
         
