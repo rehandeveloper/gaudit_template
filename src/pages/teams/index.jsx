@@ -3,9 +3,10 @@ import Hero from "../../component/common/Hero";
 import image from "../../assets/bg-2.jpg";
 import { urlRoutes } from "../../routes";
 import { teamsData } from "../../data/teams";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
 
 const Teams = () => {
+  const  navigate = useNavigate()
   return (
     <>
       <Hero
@@ -31,7 +32,7 @@ const Teams = () => {
         <div className="lg:flex flex-wrap gap-10">
           {teamsData.map((item, index) => {
             return (
-              <div key={index} className="mt-10">
+              <div key={index} className="mt-10 hover:cursor-pointer" onClick={()=>{navigate(item.slug)}}>
                 <div className="max-w-96">
                   <div className="rounded-lg border border-info bg-white px-4 pt-8 pb-10 min-h-96">
                     <div className="relative mx-auto w-36 rounded-full">
