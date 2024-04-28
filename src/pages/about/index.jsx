@@ -25,7 +25,7 @@ const AboutUs = () => {
       />
       <AboutCompany hideLink />
       <CompanyStatus />
-      <AboutMySelf actorImage={akritiImage}/>
+      <AboutMySelf actorSlug={"iman"}/>
     </>
   );
 }

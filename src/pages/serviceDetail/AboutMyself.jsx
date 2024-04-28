@@ -5,6 +5,7 @@ import AnimatedButton from '../../component/common/AnimatedButton';
 import businness from "../../assets/bg-1.jpg";
 import unity from "../../assets/bg-2.jpg";
 import { akritiImage, teamsData } from '../../data/teams';
+import { urlRoutes } from '../../routes';
 const AboutMySelf = ({ actorSlug }) => {
   const my = teamsData.find((item) => (item.slug == actorSlug))
   return (
@@ -39,6 +40,10 @@ const AboutMySelf = ({ actorSlug }) => {
             My name is {my.name}
           </h1>
           {my.description}
+          <div className='pt-10'>
+          <AnimatedButton text={"Meet My team"} to={urlRoutes.TEAMS}/>
+
+          </div>
         </div>
       </div>
     </div>
