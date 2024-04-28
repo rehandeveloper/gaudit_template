@@ -39,15 +39,15 @@ function ChooseUs() {
 
         <div className='my-2'>
 
-          <ProgressBar heading={"Expertise"}/>
-          <ProgressBar heading={"Reputation"}/>
-          <ProgressBar  heading={"Expertise"}/>
-          <ProgressBar heading={"testing"}/>
+          <ProgressBar percentage={40} heading={"Expertise"}/>
+          <ProgressBar percentage={90} heading={"Reputation"}/>
+          <ProgressBar percentage={60}  heading={"Efficiency"}/>
+          <ProgressBar percentage={70} heading={"Consulting"}/>
         </div>
     </div>
     <div className='lg:w-5/12 w-full block  lg:order-last order-first '>
 
-    <div className='w-full bg-red-700 h-[600px] rounded-lg  relative'>
+    <div className='w-full  h-[600px] rounded-lg  relative'>
                 <img src={image} className='roundedd-lg bg-cover absolute w-full h-full'/>
                 <div className='absolute -bottom-20 lg:-left-16 left-14 w-96 bg-primary h-40 rounded-lg flex items-center flex-col justify-center'>
                     <h2 className='text-center my-2 text-white font-bold text-5xl'>15 <sup>th</sup></h2>
