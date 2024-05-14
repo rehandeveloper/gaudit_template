@@ -42,6 +42,8 @@ function Navbar() {
             <li className="text-white p-4 min-w-max">
               <Link to={urlRoutes.ABOUT}>About</Link>
             </li>
+            
+
             <li className="text-white relative group p-4  min-w-max">
               <Link to={urlRoutes.SERVICE}>
                 <span>
@@ -70,6 +72,41 @@ function Navbar() {
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
                   <Link to={urlRoutes.SERVICE_DETAIL}>Service Detail</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="text-white relative group p-4  min-w-max">
+              <Link to={urlRoutes.SERVICE}>
+                <span>
+                Our Coaching Programs
+                  <ChevronDownOutline
+                    color={"#fff"}
+                    width={"15px"}
+                    height={"15px"}
+                    cssClasses={"inline mx-2 mb-1"}
+                  />
+                </span>
+              </Link>
+              <ul
+                className="
+                    opacity-0 scale-y-0
+                     absolute top-14 rounded-b-lg z-10 bg-primary shadow-md
+                      border-t-primary-light border-t-4 min-w-max  -translate-x-1/2 left-1/2
+                      transition-all duration-500
+                      group-hover:opacity-100
+                      group-hover:scale-y-100
+                      origin-top
+                      "
+              >
+                <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
+                  <Link to={urlRoutes.SERVICE}>Personal Development</Link>
+                </li>
+                <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
+                  <Link to={urlRoutes.SERVICE_DETAIL}>Strategic Finance</Link>
+                </li>
+
+                <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
+                  <Link to={urlRoutes.SERVICE_DETAIL}>Pure Strategic Mastery</Link>
                 </li>
               </ul>
             </li>
@@ -206,9 +243,14 @@ function Navbar() {
               </ul>
             </li>
 
+            
+
+            
+
             <li className="text-white p-4 min-w-max">
               <Link to={urlRoutes.TEAMS}>Teams</Link>
             </li>
+            
             <li className="text-white p-4 min-w-max">
               <Link to={urlRoutes.CONTACT}>Contact Us</Link>
             </li>

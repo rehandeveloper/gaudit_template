@@ -1,8 +1,10 @@
 import React from "react";
 import {motion} from "framer-motion";
+import { useNavigate } from "react-router-dom";
 function Coaching() {
+  const navigate = useNavigate();
   return (
-    <section className="w-full min-h-max py-16 lg:px-28 px-16  lg:gap-x-32">
+    <section className="w-full min-h-max py-16 lg:px-28 px-16  lg:gap-x-32" >
       <div className="text-center  my-10">
         <p className="uppercase text-primary font-bold tracking-wide text-xl">
           Our Coaching Programs
@@ -22,7 +24,7 @@ function Coaching() {
          }}
          className="bg-primary
           hover:bg-primary-light hover:border-teal-200
-           border-white border-t-4 transition-colors select-none  p-10 my-2">
+           border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/1")}>
           <h1 className="text-xl font-bold my-2 text-white ">
             Personal Development Coaching Program
           </h1>
@@ -44,7 +46,7 @@ function Coaching() {
              duration: 0.5,
            },
          }}
-        className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2">
+        className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/2")}>
           <h1 className="text-xl font-bold my-2 text-white ">
             Strategic Finance Coaching Program
           </h1>
@@ -66,7 +68,7 @@ function Coaching() {
             duration: 0.2,
           },
         }}
-        className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2">
+        className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/2")}>
           <h1 className="text-xl font-bold my-2 text-white ">
             Pure Strategic Mastery Coaching Program{" "}
           </h1>

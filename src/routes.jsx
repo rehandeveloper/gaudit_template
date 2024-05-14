@@ -10,6 +10,7 @@ import ContactUs from "./pages/contactUs";
 import Teams from "./pages/teams";
 import Member from "./pages/member";
 import { Terms, Policy } from "./pages/termsAndPolicies";
+import Coaching from "./pages/coaching";
 
 export const urlRoutes = {
   HOME: "/",
@@ -26,6 +27,7 @@ export const urlRoutes = {
   Member: "/teams/:member",
   TERMS: "/terms-and-conditions",
   POLICY: "/privacy-policy",
+  COACHING:"/coaching/:program"
 }; 
 
 
@@ -82,6 +84,10 @@ const router = createBrowserRouter([
         path: urlRoutes.Member,
         element: <Member />,
       },
+      {
+        path: urlRoutes.COACHING,
+        element: <Coaching />,
+      }
     ],
   },
 ]);

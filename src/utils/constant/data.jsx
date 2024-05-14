@@ -68,3 +68,44 @@ export const servicesData =[
 
 
 ];
+
+
+export const CoachingData =[
+{
+    id:1,
+    head:"Personal Development Coaching Program",
+    description: <p className="text-xl my-4 text-secondary">
+        Embark on a transformative journey with our Personal
+Development Coaching Program. Designed for professionals seeking personal growth, this program
+enhances skills, boosts confidence, and accelerates career advancement through workshops and
+personalized coaching.
+    </p>,
+    programs:["Personal Professional Assessment", "Integrated Business Strategy &amp; Financial Management"],
+
+},
+{
+    id:1,
+    head:"Strategic Finance Coaching Program",
+    description:<p className="text-xl my-4 text-secondary">
+        Elevate your financial leadership with our Strategic Finance Coaching
+Program. Tailored for finance professionals and business leaders, this program sharpens strategic
+decision-making and understanding of market dynamics, empowering you to navigate the complexities of
+finance and strategy.
+    </p>,
+    programs:["Advanced Corporate Finance Mastery", "Mastering Feasibility Study Reports", "Comprehensive Valuation Techniques"],
+
+},
+{
+    id:1,
+    head:"Pure Strategic Mastery Coaching Program",
+    description:<p className="text-xl my-4 text-secondary">
+        Master the art of strategy with our Pure Strategic Mastery
+Coaching Program. Aimed at those dedicated to becoming visionary leaders, this program teaches you to
+develop and execute innovative strategies, anticipate future trends, and secure sustainable competitive
+advantages.
+    </p>,
+    programs:["Business Strategy Development", "Strategic Leadership for Executives"],
+
+}
+
+]
