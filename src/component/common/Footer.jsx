@@ -9,7 +9,7 @@ import {
 } from "react-ionicons";
 import { COMPANY } from "../../lib/templateConstants";
 import { SocialLinks } from "./Description";
-import logo from "./../../assets/logoOnly.png";
+import logo from "./../../assets/logoONly.png";
 
 import { Link } from "react-router-dom";
 import { urlRoutes } from "../../routes";
@@ -18,7 +18,7 @@ import { Right } from "./list/RightArrowListItem";
 import { serviceData } from "../../data/services";
 
 
-export function Contact({ light, title = "Information",subtitle }) {
+export const Contact=({ light, title = "Information",subtitle }) =>{
   return (
     <div className="grid grid-rows-1 md:px-10">
       <div className="row-span-1">
