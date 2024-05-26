@@ -89,12 +89,11 @@ const Footer = () => {
         <div className=" grid-rows-3 gap-10 grid col-span-4 sm:col-span-1 md:col-span-4 lg:col-span-1">
           <div className="row-span-2 ">
             <p className="font-black text-6xl text-white">
-              <img src={logo} alt="gaudit logo" width="250px" />
+              <img src={logo} alt="gaudit logo" width="80px" />
             </p>
             {/* <font className="w-full">slogan of the company</font> */}
-            <p className=" text-white">
-              Donec neque massa, faucibus nec lorem vitae feugiat pharetra sem.
-              Nulla elementum eget lectus dapibus amatug mix finibus.
+            <p className=" text-white my-10 font-bold text-2xl">
+             Global Strategy Finance Consultant
             </p>
           </div>
           

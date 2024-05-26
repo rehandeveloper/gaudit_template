@@ -35,6 +35,17 @@ function Coaching() {
             accelerates career advancement through workshops and personalized
             coaching.
           </p>
+          <ul>
+            <li className="text-white my-4">
+            How to secure the job of your dream (different levels)
+            </li>
+          <li className="text-white my-4">
+          Self Management Skills
+          </li>
+          <li className="text-white my-4">
+          Career Advancement Strategies
+          </li>
+          </ul>
         </motion.div>
 
         <motion.div
@@ -57,6 +68,18 @@ function Coaching() {
             understanding of market dynamics, empowering you to navigate the
             complexities of finance and strategy.
           </p>
+          <ul>
+            <li className="text-white my-4">How to simply building Financial Models for Different companies</li>
+            <li className="text-white my-4">Financial Analysis for Different companies</li>
+            <li className="text-white my-4">How to build Powerful Financial Dashboards</li>
+            <li className="text-white my-4">Advanced Corporate Finance Mastery</li>
+            <li className="text-white my-4">Mastering Feasibility Study Reports</li>
+            <li className="text-white my-4">
+            Comprehensive Valuation Techniques
+            </li>
+            <li className="text-white my-4">Integrated Business Strategy & Financial Management
+            </li>
+          </ul>
         </motion.div>
         <motion.div
         
@@ -79,6 +102,14 @@ function Coaching() {
             strategies, anticipate future trends, and secure sustainable
             competitive advantages.
           </p>
+          <ul>
+            <li className="my-4 text-white">
+            Strategic Leadership for Execution
+            </li>
+            <li className="my-4 text-white">
+            Business Strategy Development
+            </li>
+          </ul>
         </motion.div>
       </div>
     </section>

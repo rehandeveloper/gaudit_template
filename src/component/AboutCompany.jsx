@@ -44,7 +44,8 @@ function AboutCompany({ hideLink }) {
       </motion.div>
       <div className="lg:w-1/2 w-full h-full">
         <div className="p-12">
-          <p className="text-primary font-medium text-xl">ABOUT COMPANY</p>
+          <p className="text-primary font-medium text-xl">About Global Strategy Finance Consultants
+</p>
           <motion.h1 
            initial={{ opacity: 0, y: "100%" }}
            whileInView={{ opacity: 1, y: 0 }}
@@ -59,12 +60,8 @@ function AboutCompany({ hideLink }) {
             Strategic partner for Finance and Business Strategy.
           </motion.h1>
           <p className="text-secondary my-2">
-            Your strategic partner in navigating the complexities of Finance and
-            Business Strategy. We offer comprehensive solutions tailored to your
-            unique business needs, ensuring excellence and integrity in every
-            engagement. Discover how our expertise in Internal Audit, Tax
-            Services, Feasibility Studies, Fractional CFO Services, and
-            Valuation Reports can propel your business forward.
+          We offer a specialized Strategy Mastery Program, Personal Development and Strategic Finance coaching, including training on becoming a Fractional CFO, all designed to enhance our clients' careers and empower them to expand or establish their businesses. Our expert guidance ensures sustainable growth and long-term success, making us your strategic partner in finance and business strategy. We provide comprehensive, customized solutions that uphold excellence and integrity. Discover how our expertise in Internal Audit, Tax Services, Feasibility Studies, Fractional CFO Services, and Valuation Reports can propel your business forward.
+
           </p>
 
           <div className="my-14">
@@ -78,11 +75,8 @@ function AboutCompany({ hideLink }) {
                 Our Vision
               </h1>
               <p>
-                Global Strategy Finance Consultants, we're committed to
-                empowering businesses with insightful financial strategies and
-                robust analyses. Our team of seasoned professionals brings a
-                wealth of experience across diverse industries, dedicated to
-                delivering measurable results and unparalleled value.
+              Global Strategy Finance Consultants, we're committed to empowering businesses with insightful financial strategies and robust analyses. Our team of seasoned professionals brings a wealth of experience across diverse industries, dedicated to delivering measurable results and unparalleled value.
+
               </p>
             </div>
             <div>
@@ -95,9 +89,8 @@ function AboutCompany({ hideLink }) {
                 Our Mission
               </h1>
               <p>
-                To be recognized as the trusted advisor for businesses seeking
-                innovative Financial and Strategic Solutions, contributing to
-                their sustainable growth and success.
+              To be recognized as the trusted advisor for businesses seeking innovative Financial and Strategic Solutions, contributing to their sustainable growth and success.
+
               </p>
             </div>
           </div>
