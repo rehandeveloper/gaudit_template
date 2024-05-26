@@ -1,5 +1,7 @@
 import akriti from "./../assets/team/akriti.jpg";
+import iman from "./../assets/team/iman.jpg"
 export const akritiImage = akriti
+export const imanImage = iman;
 export const teamsData = [
   {
     slug: "iman",
@@ -7,8 +9,7 @@ export const teamsData = [
     designation: "Co Founder & Managing Director",
     quote: `We offer specialized programs in Strategy Mastery, Personal Development, and Strategic Finance, including training for becoming a Fractional CFO, tailored to boost your career and business prospects. As your strategic partner, our expert guidance and customized solutions in Internal Audit, Tax Services, Feasibility Studies, and more ensure your sustainable growth and success. Discover how we can propel your business forward.
     `,
-    profilePic:
-      "/src/assets/team/iman.jpg",
+    profilePic:imanImage,
     description: (
       <>
         <p className="text-secondary my-2">
