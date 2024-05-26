@@ -8,6 +8,7 @@ import {
   MailOutline,
 } from "react-ionicons";
 
+
 export function SocialLinks() {
   return (
     <div className="flex gap-x-4 h-10">
