@@ -18,11 +18,13 @@ const HomeHero = () => {
           <br/>
         Discover the breadth of our services including Internal Audit, Tax Services, Feasibility Studies, Fractional CFO Services, and Valuation Reports. Each offering is executed with excellence and integrity, aimed at propelling your business forward. Allow us to show you how our expertise can transform your business landscape, ensuring success and growth in every engagement.
         </p>
-      </>}
-      button={<AnimatedButton text={"discover more"} />}
+      </>
+      // button={<AnimatedButton text={"discover more"} />
+    }
+
       animate={true}
     >
-      <motion.div 
+      {/* <motion.div 
       initial={{ opacity: 0, x: "100%" }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{
@@ -81,7 +83,7 @@ const HomeHero = () => {
             </motion.div>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </Hero>
   );
 }

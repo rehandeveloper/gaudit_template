@@ -7,6 +7,7 @@ import {
   LogoYoutube,
   MailOutline,
 } from "react-ionicons";
+import { Link } from "react-router-dom";
 
 
 export function SocialLinks() {
@@ -40,10 +41,15 @@ export function Description() {
             width="22px"
             cssClasses={"inline-block mx-2 pb-1 text-primary"}
           />
-          99 Roving St., Big City, PKU 23456
+          Muscat, Oman
         </span>
 
-        <span className="text-secondary">
+        <Link 
+        to="#"
+       onClick={(e) => {
+        e.preventDefault();
+        window.location.href ='mailto:example@email.com';}}
+        className="text-secondary cursor-pointer">
           <MailOutline
             color={"#00000"}
             title={"mail"}
@@ -51,8 +57,8 @@ export function Description() {
             width="22px"
             cssClasses={"inline-block mx-2 pb-1 text-primary"}
           />
-          hello@awesomesite.com
-        </span>
+         support@globalstrategyfinanceconsulting.co
+        </Link>
       </div>
 
       <SocialLinks/>

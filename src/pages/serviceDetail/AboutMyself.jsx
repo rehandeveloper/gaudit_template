@@ -17,7 +17,7 @@ const AboutMySelf = ({ actorSlug }) => {
           height={200}
           className="w-full h-full rounded-2xl shadow-sm"
         />
-        <div className="absolute lg:w-96 w-52 lg:h-52 h-36 rounded-lg lg:right-0 right-4 bottom-0  ">
+        {/* <div className="absolute lg:w-96 w-52 lg:h-52 h-36 rounded-lg lg:right-0 right-4 bottom-0  ">
           <img src={unity} className="w-full h-full rounded-2xl shadow-sm" />
           <span className="absolute top-1/2 left-1/2 flex justify-center items-center h-10 w-10">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
@@ -31,18 +31,20 @@ const AboutMySelf = ({ actorSlug }) => {
               />
             </button>
           </span>
-        </div>
+        </div> */}
       </div>
       <div className="lg:w-1/2 w-full h-full">
         <div className="p-12">
-          <p className="text-primary font-medium text-xl">MYSELF</p>
-          <h1 className="text-black lg:text-5xl text-2xl leading-loose font-semibold my-4">
-            My name is {my.name}
+          <p className="text-primary font-medium text-2xl"> {my.name}</p>
+          <h1 className="text-black  text-sm leading-loose font-semibold my-2">
+          {my.designation}
           </h1>
           {my.description}
           <div className='pt-10'>
-          <AnimatedButton text={"Meet My team"} to={urlRoutes.TEAMS}/>
-
+            {
+              my.redirect && 
+          <AnimatedButton text={"View Profile"} to={my.redirect}/>
+            }
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ export const teamsData = [
     designation: "Co Founder & Managing Director",
     quote: `We offer specialized programs in Strategy Mastery, Personal Development, and Strategic Finance, including training for becoming a Fractional CFO, tailored to boost your career and business prospects. As your strategic partner, our expert guidance and customized solutions in Internal Audit, Tax Services, Feasibility Studies, and more ensure your sustainable growth and success. Discover how we can propel your business forward.
     `,
+    redirect:"https://linkedin.com/in/iman-hamdan-acca-657045118",
     profilePic:imanImage,
     description: (
       <>
@@ -62,6 +63,7 @@ export const teamsData = [
     slug: "akrity",
     name: "Akriti Elhence",
     designation: "Consultant",
+    redirect: null,
     quote:
       "We provide valuable insights into the intricacies of\
     taxation systems and accounting practices, highlighting both the similarities and differences\

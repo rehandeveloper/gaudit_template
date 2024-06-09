@@ -94,7 +94,7 @@ function AboutCompany({ hideLink }) {
               </p>
             </div>
           </div>
-          {!hideLink && <AnimatedButton text={"More About Us"} />}
+          {!hideLink && <AnimatedButton text={"More About Us"} to={"/about"} />}
         </div>
       </div>
     </div>

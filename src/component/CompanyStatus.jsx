@@ -10,20 +10,20 @@ function CompanyStatus() {
 
         <h4 className="text-center text-white  min-w-max">
           <span className="block text-6xl font-bold">
-            15<sup className="p-2">th</sup>
+              5<sup className="p-2">th</sup>
           </span>
           <span className="text-2xl font-bold">Years Experience</span>
         </h4>
         <h4 className="text-center text-white min-w-max">
           <span className="block text-6xl font-bold">
-            75000<sup className="p-2">+</sup>
+            100<sup className="p-2">+</sup>
           </span>
           <span className="text-2xl font-bold">Happy Client</span>
         </h4>
 
         <h4 className="text-center text-white min-w-max">
           <span className="block text-6xl font-bold">
-            430000<sup className="p-2">+</sup>
+            50<sup className="p-2">+</sup>
           </span>
           <span className="text-2xl font-bold">Project Completed</span>
         </h4>

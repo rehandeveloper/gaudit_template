@@ -19,7 +19,7 @@ function ChooseUs() {
         </p>
 
 
-        <div className='flex lg:flex-nowrap flex-wrap my-10 gap-x-16'>
+        {/* <div className='flex lg:flex-nowrap flex-wrap my-10 gap-x-16'>
             <div className='flex'>
                 <i></i>
                 <div>
@@ -35,7 +35,7 @@ function ChooseUs() {
                 </div>
             </div>
 
-        </div>
+        </div> */}
 
         <div className='my-2'>
 
@@ -50,7 +50,7 @@ function ChooseUs() {
     <div className='w-full  h-[600px] rounded-lg  relative'>
                 <img src={image} className='roundedd-lg bg-cover absolute w-full h-full'/>
                 <div className='absolute -bottom-20 lg:-left-16 left-14 w-96 bg-primary h-40 rounded-lg flex items-center flex-col justify-center'>
-                    <h2 className='text-center my-2 text-white font-bold text-5xl'>15 <sup>th</sup></h2>
+                    <h2 className='text-center my-2 text-white font-bold text-5xl'>5 <sup>th</sup></h2>
                     <h6 className='text-center text-white text-2xl'>Years Experienced</h6>
                 </div>
             </div>

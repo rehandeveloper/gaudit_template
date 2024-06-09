@@ -17,7 +17,7 @@ function Coaching() {
          whileInView={{ opacity: 1, x: 0, rotate:0 }}
        
          transition={{
-           duration: 1,
+           duration: 0.5,
            opacity: {
              duration: 0.2,
            },
@@ -49,12 +49,12 @@ function Coaching() {
         </motion.div>
 
         <motion.div
-         initial={{ opacity: 0, y: "100%" }}
+         initial={{ opacity: 0, y: "50%" }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{
-           duration: 1.5,
+           duration: 0.3,
            opacity: {
-             duration: 0.5,
+             duration: 0.2,
            },
          }}
         className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/2")}>
@@ -86,7 +86,7 @@ function Coaching() {
         initial={{ opacity: 0, x: "100%", rotate:-30, transformOrigin:"top right", }}
         whileInView={{ opacity: 1, x: 0, rotate:0 }}
         transition={{
-          duration: 1,
+          duration: 0.5,
           opacity: {
             duration: 0.2,
           },

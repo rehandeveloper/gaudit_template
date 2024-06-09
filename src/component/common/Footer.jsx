@@ -20,7 +20,7 @@ import { serviceData } from "../../data/services";
 
 export const Contact=({ light, title = "Information",subtitle }) =>{
   return (
-    <div className="grid grid-rows-1 md:px-10">
+    <div className="grid grid-rows-1 md:px-5">
       <div className="row-span-1">
         <ul>
         <p
@@ -33,7 +33,7 @@ export const Contact=({ light, title = "Information",subtitle }) =>{
         <p>
          {subtitle}
         </p>
-          <li className="flex align-baseline mt-3">
+          {/* <li className="flex align-baseline mt-3">
             <CallOutline width={"3em"} height={"3em"} color={"#51c5ff"} />
             <div className="ms-3">
               <p
@@ -45,7 +45,7 @@ export const Contact=({ light, title = "Information",subtitle }) =>{
               </p>
               <p className={cx({ "text-gray-200": !light })}>+123-234-1234</p>
             </div>
-          </li>
+          </li> */}
           <li className="flex align-baseline">
             <MailOutline width={"3em"} height={"3em"} color={"#51c5ff"} />
             <div className="ms-3">
@@ -56,8 +56,8 @@ export const Contact=({ light, title = "Information",subtitle }) =>{
               >
                 Email
               </p>
-              <p className={cx({ "text-gray-200": !light })}>
-                hello@gsfc.com
+              <p className={cx("w-64 break-words",{ "text-gray-200": !light })}>
+              support@globalstrategyfinanceconsulting.co
               </p>
             </div>
           </li>
@@ -72,7 +72,7 @@ export const Contact=({ light, title = "Information",subtitle }) =>{
                 Address
               </p>
               <p className={cx({ "text-gray-200": !light })}>
-                99 Roving St., Big City, PKU 23456
+                Muscat, Oman
               </p>
             </div>
           </li>

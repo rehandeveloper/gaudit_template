@@ -76,7 +76,7 @@ function Navbar() {
               </ul>
             </li>
             <li className="text-white relative group p-4  min-w-max">
-              <Link to={urlRoutes.SERVICE}>
+              <Link to={"/coaching/0"}>
                 <span>
                 Our Coaching Programs
                   <ChevronDownOutline
@@ -99,14 +99,14 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <Link to={urlRoutes.SERVICE}>Personal Development</Link>
+                  <Link to={"/coaching/0"}>Personal Development</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <Link to={urlRoutes.SERVICE_DETAIL}>Strategic Finance</Link>
+                  <Link to={"/coaching/1"}>Strategic Finance</Link>
                 </li>
 
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <Link to={urlRoutes.SERVICE_DETAIL}>Pure Strategic Mastery</Link>
+                  <Link to={"/coaching/2"}>Pure Strategic Mastery</Link>
                 </li>
               </ul>
             </li>

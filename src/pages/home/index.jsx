@@ -7,6 +7,7 @@ import "./home.css";
 import OurServices from '../../component/Services';
 import ChooseUs from '../../component/ChooseUs';
 import Coaching from '../../component/Coaching.';
+import Testimonial from '../../component/common/Testimonial';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <CompanyStatus />
       <OurServices />
       <ChooseUs />
+      <Testimonial/>
       <Faq />
       <Blog />
     </div>
