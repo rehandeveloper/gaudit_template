@@ -112,7 +112,7 @@ function Navbar() {
             </li>
 
             <li className="text-white relative group p-4  min-w-max">
-              <Link to={urlRoutes.SERVICE}>
+              <Link to={urlRoutes.CASES}>
                 <span>
                   Cases
                   <ChevronDownOutline
@@ -135,11 +135,11 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <Link to={urlRoutes.CASES}>Cases</Link>
+                  <Link to={urlRoutes.CASES}>Case details</Link>
                 </li>
-                <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
+                {/* <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
                   <Link to={urlRoutes.CASE_DETAIL}>Case Detail</Link>
-                </li>  
+                </li>   */}
               </ul>
             </li>
 
@@ -212,7 +212,7 @@ function Navbar() {
             </li>
 
             <li className="text-white relative group p-4 min-w-max" onClick={()=> setSubmenu(prev=> prev? null: 2)}>
-              <Link to={urlRoutes.SERVICE}>
+              <Link to={urlRoutes.CASES}>
                 <span>
                   Cases
                   <ChevronDownOutline
@@ -235,11 +235,11 @@ function Navbar() {
                       })}
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 " >
-                  <Link to={urlRoutes.CASES}>Cases</Link>
+                  <Link to={urlRoutes.CASES}>Case details</Link>
                 </li>
-                <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
+                {/* <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
                   <Link to={urlRoutes.CASE_DETAIL}>Case Detail</Link>
-                </li>  
+                </li>   */}
               </ul>
             </li>
 

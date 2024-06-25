@@ -25,7 +25,6 @@ export const serviceData = [
     Icon: BarChartOutline,
 
     slug: "financial-management-and-mis-reporting-program",
-
     title: "Financial Management and MIS Reporting Program",
     img: "https://gtkit.rometheme.pro/gaudit/wp-content/uploads/sites/20/2023/03/close-up-accountant-bookkeeper-woman-working-about-AZ87SS3.jpg",
     description:

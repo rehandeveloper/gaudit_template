@@ -24,6 +24,7 @@ import AboutMySelf from "./AboutMyself";
 
 const ServiceDetail = () => {
   const { slug = "accounting-review-program" } = useParams();
+  console.log(slug, "slug");
   return (
     <>
       <Hero
@@ -42,7 +43,7 @@ const ServiceDetail = () => {
       <section className="block lg:flex mx-5 lg:mx-10 xl:mx-48 py-24 gap-x-11">
         <div className="w-12/12">
           <ServiceContent
-            data={serviceData.find((item) => item.slug === slug||"accounting-review-program")}
+            data={serviceData.find((item) => item.slug === slug)}
           />
         </div>
         <div className="max-w-6/12">

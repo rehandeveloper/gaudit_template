@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import { ArrowRedoOutline, DocumentOutline, FolderOpenOutline } from 'react-ionicons';
 
 const ServiceContent = ({data}) => {
+  console.log(data, "data");
   return (
     <>
       <div className="rounded-xl overflow-hidden h-6/12 w-12/12">

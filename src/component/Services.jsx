@@ -26,7 +26,7 @@ function OurServices() {
   return (
     <div className='w-full min-h-screen p-10'>
         <p className='upper text-primary text-center'>OUR SERVICES</p>
-        <h1 className='text-center lg:text-6xl text-4xl font-bold my-10'>Real Accounting Services for You</h1>
+        {/* <h1 className='text-center lg:text-6xl text-4xl font-bold my-10'>Real Accounting Services for You</h1> */}
         {/* <p className='text-secondary text-center md:w-3/6 mx-auto'>
         Sed tincidunt accumsan lacus nec bibendum sapien aliquet ut suspendisse pharetra. Finibus condimentum aenean lacinia sem metus Integer.
         </p> */}

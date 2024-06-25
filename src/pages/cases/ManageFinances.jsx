@@ -30,8 +30,8 @@ function ManageFinances({square=true, parallax = true }) {
           Integer dapibus diam justo.
         </p>
       )}
-      <h1 className="text-center mt-2">
-        <AnimatedButton text={"Contact Us"} />
+      <h1 className="text-center mt-10">
+        <AnimatedButton text={"Contact Us"} to="/contact"  />
       </h1>
       {/* </div> */}
     </div>
