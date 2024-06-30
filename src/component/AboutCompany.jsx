@@ -1,5 +1,5 @@
 import React from 'react';
-import businness from "./../assets/bg-1.jpg";
+import businness from "./../assets/ew_1.png";
 import unity from "./../assets/bg-2.jpg";
 import { ChevronForwardOutline, Play } from 'react-ionicons';
 import AnimatedButton from './common/AnimatedButton';

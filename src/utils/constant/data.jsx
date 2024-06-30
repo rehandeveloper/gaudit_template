@@ -80,7 +80,7 @@ Development Coaching Program. Designed for professionals seeking personal growth
 enhances skills, boosts confidence, and accelerates career advancement through workshops and
 personalized coaching.
     </p>,
-    programs:["Personal Professional Assessment", "Integrated Business Strategy &amp; Financial Management"],
+    programs:["Personal Professional Assessment", "Integrated Business Strategy & Financial Management"],
 
 },
 {
