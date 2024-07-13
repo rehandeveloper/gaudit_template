@@ -12,6 +12,7 @@ import Member from "./pages/member";
 import { Terms, Policy } from "./pages/termsAndPolicies";
 import Coaching from "./pages/coaching";
 
+
 export const urlRoutes = {
   HOME: "/",
   ABOUT: "/about",
@@ -19,7 +20,6 @@ export const urlRoutes = {
   SERVICE_DETAIL: "/service-detail/",
   SERVICE_DETAIL_ID: "/service-detail/:slug",
   CASES: "/cases",
-  PRICING: "/pricing",
   FAQ: "/faq",
   CASE_DETAIL: "/case-detail",
   CONTACT: "/contact",

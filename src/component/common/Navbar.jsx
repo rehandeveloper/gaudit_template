@@ -99,14 +99,15 @@ function Navbar() {
                       "
               >
                 <li className=" text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300 ">
-                  <Link to={"/coaching/0"}>Personal Development</Link>
+                  <Link to={"/coaching/0"}>CFO Services Package</Link>
                 </li>
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <Link to={"/coaching/1"}>Strategic Finance</Link>
+                  <Link to={"/coaching/1"}>
+                  Finance Business Partner Package</Link>
                 </li>
 
                 <li className="text-white p-4 border-b-[1px] border-b-cyan-900 group-hover:border-b-0 transition-all delay-100 ease-out duration-300">
-                  <Link to={"/coaching/2"}>Pure Strategic Mastery</Link>
+                  <Link to={"/coaching/2"}>Growth and Valuation Package</Link>
                 </li>
               </ul>
             </li>

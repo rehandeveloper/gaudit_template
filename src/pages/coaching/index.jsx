@@ -37,13 +37,13 @@ We offer two courses, which are:
 </h3>
 
 
-<div className='flex flex-wrap gap-10 my-10'>
+<div className='flex gap-4 my-10'>
   {
     currentProgram.programs.map((item, ind)=>{
       return(
         <div key={item.id}
          className={
-          classNames("'w-full md:w-1/2 lg:w-1/3 p-10 shadow-md border-l-8  rounded-lg  hover:text-white transition-all duration-150 hover:-translate-y-1 select-none'", 
+          classNames(" p-10 w-full md:w-1/2 shadow-md border-l-8  rounded-lg  hover:text-white transition-all duration-150 hover:-translate-y-1 select-none'", 
           {
             "border-l-primary hover:bg-primary": ind %2 ==0
           },
@@ -52,7 +52,15 @@ We offer two courses, which are:
           },
         )
          }>
-        <h2 className='text-xl text-center'>{item}</h2>
+        <h2 className='text-xl text-left mb-4 font-bold'>{item.name}</h2>
+
+        <ul className='list-disc'>
+          {
+            item.child.map(i=> (
+              <li key={i} className='list-item my-2'>{i}</li>
+            ))
+          }
+        </ul>
     </div>
  
       )

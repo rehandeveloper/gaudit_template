@@ -26,7 +26,7 @@ function Coaching() {
           hover:bg-primary-light hover:border-teal-200
            border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/1")}>
           <h1 className="text-xl font-bold my-2 text-white ">
-            Personal Development Coaching Program
+          CFO Services Package
           </h1>
           <p className="text-white font-thin text-sm my-4">
             Embark on a transformative journey with our Personal Development
@@ -59,7 +59,7 @@ function Coaching() {
          }}
         className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/2")}>
           <h1 className="text-xl font-bold my-2 text-white ">
-            Strategic Finance Coaching Program
+          Finance Business Partner Package
           </h1>
           <p className="text-white font-thin text-sm my-4">
             Elevate your financial leadership with our Strategic Finance
@@ -93,7 +93,7 @@ function Coaching() {
         }}
         className="bg-primary hover:bg-primary-light hover:border-teal-200 border-white border-t-4 transition-colors select-none  p-10 my-2" onClick={()=> navigate("/coaching/2")}>
           <h1 className="text-xl font-bold my-2 text-white ">
-            Pure Strategic Mastery Coaching Program{" "}
+          Growth and Valuation Package
           </h1>
           <p className="text-white font-thin text-sm my-4">
             Master the art of strategy with our Pure Strategic Mastery Coaching

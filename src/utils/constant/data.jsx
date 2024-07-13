@@ -73,38 +73,100 @@ export const servicesData =[
 export const CoachingData =[
 {
     id:1,
-    head:"Personal Development Coaching Program",
+    head:"CFO Services Package",
     description: <p className="text-xl my-4 text-secondary">
         Embark on a transformative journey with our Personal
 Development Coaching Program. Designed for professionals seeking personal growth, this program
 enhances skills, boosts confidence, and accelerates career advancement through workshops and
 personalized coaching.
     </p>,
-    programs:["Personal Professional Assessment", "Integrated Business Strategy & Financial Management"],
+    programs:[
+        {
+            name: "Fractional CFO Program",
+            child:[
+                "Part-time CFO support tailored to your business needs",
+                "Includes budgeting, forecasting, financial analysis, and reporting",
+                "Ideal for businesses requiring high-level financial expertise on a flexible, part-time basis",
+            ],
+
+        },
+        {
+            name:"Full-Time CFO Program",
+            child:[
+                "Comprehensive financial management for continuous, full-scale CFO support",
+                "Includes risk management, compliance, leadership in financial strategy, and day-to-day financial operations",
+                "Perfect for businesses needing ongoing financial leadership and management"
+
+            ],
+        }
+        ],
 
 },
 {
     id:1,
-    head:"Strategic Finance Coaching Program",
+    head:"Finance Business Partner Package",
     description:<p className="text-xl my-4 text-secondary">
         Elevate your financial leadership with our Strategic Finance Coaching
 Program. Tailored for finance professionals and business leaders, this program sharpens strategic
 decision-making and understanding of market dynamics, empowering you to navigate the complexities of
 finance and strategy.
     </p>,
-    programs:["Advanced Corporate Finance Mastery", "Mastering Feasibility Study Reports", "Comprehensive Valuation Techniques"],
+    programs:[
+        {
+            name:"Basic Finance Business Partner Program",
+            child:[
+                "Long-term financial plans and scenario analysis",
+"Regular financial performance reviews and KPI tracking",
+"Comprehensive budgeting support and budget vs. actual analysis",
+"Ideal for businesses needing foundational financial insights and support",
+
+            ],
+        },
+        {
+            name:"Advanced Finance Business Partner Program",
+            child:[
+                "Financial modeling and strategic alignment with complex business objectives",
+"In-depth financial performance reviews and customized dashboards",
+"Comprehensive financial analysis for major business decisions, including investment appraisal and risk management",
+"Perfect for businesses requiring extensive strategic financial guidance and detailed reporting",
+
+            ],
+        }
+    ],
 
 },
 {
     id:1,
-    head:"Pure Strategic Mastery Coaching Program",
+    head:"Growth and Valuation Package",
     description:<p className="text-xl my-4 text-secondary">
         Master the art of strategy with our Pure Strategic Mastery
 Coaching Program. Aimed at those dedicated to becoming visionary leaders, this program teaches you to
 develop and execute innovative strategies, anticipate future trends, and secure sustainable competitive
 advantages.
     </p>,
-    programs:["Business Strategy Development", "Strategic Leadership for Executives"],
+    programs:[
+
+        {
+            name:"Business Valuation Specialist Program",
+            child:[
+                        "Accurate and comprehensive business valuations",
+                        "Analysis of financial statements and market conditions",
+                        "Valuation reports for mergers, acquisitions, and funding purposes",
+                        "Ideal for businesses needing precise valuation for strategic decision-making",
+
+            ],
+        },
+        {
+            name:"Merger and Acquisitions Advisor Program",
+            child:[
+                "Comprehensive support for mergers, acquisitions, and divestitures",
+                "Strategic valuation and financial due diligence",
+                "Negotiation and deal structuring",
+                "Perfect for businesses looking to expand through acquisitions or streamline operations through divestitures",
+
+            ],
+        }
+    ],
 
 }
 

@@ -110,7 +110,6 @@ const Footer = () => {
                 <Right title={"About Us"} to={urlRoutes.ABOUT} />
                 <Right title={"Services"} to={urlRoutes.SERVICE} />
                 <Right title={"Cases"} to={urlRoutes.CASES} />
-                <Right title={"Pricing"} to={urlRoutes.PRICING} />
                 <Right title={"FAQs"} to={urlRoutes.FAQ} />
                 <Right title={"Teams"} to={urlRoutes.TEAMS} />
                 <Right title={"Contact Us"} to={urlRoutes.CONTACT} />
