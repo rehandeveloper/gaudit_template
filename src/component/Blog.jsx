@@ -28,8 +28,8 @@ function Blog() {
         <div className='max-w-full lg:px-24 p-4 py-6 grid lg:grid-cols-3 grid-flow-row gap-8 ' id="my-gallery">
         {
             blogData.map(i=>(
-              <a key={i.src} href={i.src} className='shadow-lg'>
-              <img src={i.src} alt="Image 1" />
+              <a key={i.src} href={i.src} className='shadow-2xl rounded-lg overflow-hidden p-4  hover:bg-slate-200 hover:scale-105 transition-all'>
+              <img src={i.src} alt="Image 1" className='w-full h-full object-cover rounded-2xl' />
           </a>
 
             ))
