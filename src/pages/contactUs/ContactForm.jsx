@@ -1,29 +1,124 @@
-import React from "react";
+import React, { useRef } from "react";
 import Input from "../../component/formElement/Input";
 import { Contact } from "../../component/common/Footer";
 import Textarea from "../../component/formElement/Textarea";
 import cx from "classnames"
+import { useSnackbar } from 'react-simple-snackbar';
+import axios from "axios";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 export const ContactFormComponent = ({oneColumn}) => {
+  const [openSnackbar] = useSnackbar();
+  const navigate = useNavigate();
+  const formRef = useRef(null);
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  console.log(errors
+
+  )
+
+
+  const onSubmit = async(data)=>{
+   const {name, email, subject, message} = data;
+   
+   formRef.current.reset();
+
+    try{
+     const resp = await axios.post("https://sheet.best/api/sheets/ad57720c-1507-4d69-9b41-a09c75c4b581", {
+        name,
+        email,
+        subject,
+        message
+      } )
+      console.log(resp);
+
+      openSnackbar("You messsage has been saved and we will contact you soon")
+      
+      setTimeout(()=>{
+        navigate("/");
+      },3000)
+
+    }
+    catch(error){
+      console.error(error);
+      openSnackbar("Failed to send message, try again later")
+    }
+  
+   
+
+    
+};
+
+
   return (
     <>
       <p className="font-extrabold text-2xl mb-10">Send Us a Message</p>
-      <form action="." method="post" className="grid gap-5">
-        <div className={cx("grid col-span-2 gap-5  w-full",{
-          "grid-cols-2":!oneColumn
-        })}>
-          <Input placeholder={"Name"} />
-          <Input placeholder={"Email"} />
+      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-5" ref={formRef}>
+      <div className="grid col-span-2 gap-5 w-full grid-cols-2">
+        <div className="flex flex-col">
+          <label htmlFor="name" className="text-sm">Name
+          <span className="text-red-500 mx-2">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            {...register("name", {
+              required: "Name is required"
+            })}
+            className="border border-gray-300 rounded-md p-2 mt-1"
+          />
+          {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
         </div>
-        <div className="grid col-span-2 gap-3">
-          <Input placeholder={"Subject"} />
-          <Textarea placeholder={"Message"} />
+        <div className="flex flex-col">
+          <label htmlFor="email" className="text-sm">Email
+          <span className="text-red-500 mx-2">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Invalid email address'
+              }
+            })}
+            className="border border-gray-300 rounded-md p-2 mt-1"
+          />
+          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
         </div>
-        <div className="grid col-span-2 gap-3">
-          <button className="bg-info p-4 mt-3 rounded-md text-white font-semibold">
-            SEND MESSAGE
-          </button>
-        </div>
-      </form>
+      </div>
+      <div className="grid col-span-2 gap-3">
+        <label htmlFor="subject" className="text-sm">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          placeholder="Subject"
+          {...register("subject")}
+          className="border border-gray-300 rounded-md p-2 mt-1"
+        />
+      </div>
+      <div className="grid col-span-2 gap-3">
+        <label htmlFor="message" className="text-sm">Message
+        <span className="text-red-500 mx-2">*</span>
+        </label>
+        <textarea
+          id="message"
+          placeholder="Message"
+          {...register("message", {
+            required: "Message is required"
+          })}
+          className="border border-gray-300 rounded-md p-2 mt-1"
+        />
+        {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
+      </div>
+      <div className="grid col-span-2 gap-3">
+        <button type="submit" className="bg-info p-4 rounded-md text-white font-semibold">
+          SEND MESSAGE
+        </button>
+      </div>
+    </form>
     </>
   );
 };
