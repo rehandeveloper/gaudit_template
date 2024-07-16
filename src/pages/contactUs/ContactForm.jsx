@@ -4,6 +4,7 @@ import { Contact } from "../../component/common/Footer";
 import Textarea from "../../component/formElement/Textarea";
 import cx from "classnames"
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import axios from "axios";
 import { useForm } from "react-hook-form";
