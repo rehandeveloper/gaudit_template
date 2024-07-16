@@ -3,12 +3,13 @@ import Input from "../../component/formElement/Input";
 import { Contact } from "../../component/common/Footer";
 import Textarea from "../../component/formElement/Textarea";
 import cx from "classnames"
-import { useSnackbar } from 'react-simple-snackbar';
+import { ToastContainer, toast } from 'react-toastify';
+
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 export const ContactFormComponent = ({oneColumn}) => {
-  const [openSnackbar] = useSnackbar();
+  
   const navigate = useNavigate();
   const formRef = useRef(null);
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -30,8 +31,9 @@ export const ContactFormComponent = ({oneColumn}) => {
         message
       } )
       console.log(resp);
+      toast("Saved Successfully!")
 
-      openSnackbar("You messsage has been saved and we will contact you soon")
+     
       
       setTimeout(()=>{
         navigate("/");
@@ -40,7 +42,7 @@ export const ContactFormComponent = ({oneColumn}) => {
     }
     catch(error){
       console.error(error);
-      openSnackbar("Failed to send message, try again later")
+      toast("something went wrong!")
     }
   
    
@@ -51,6 +53,7 @@ export const ContactFormComponent = ({oneColumn}) => {
 
   return (
     <>
+     <ToastContainer />
       <p className="font-extrabold text-2xl mb-10">Send Us a Message</p>
       <form onSubmit={handleSubmit(onSubmit)} className="grid gap-5" ref={formRef}>
       <div className="grid col-span-2 gap-5 w-full grid-cols-2">
