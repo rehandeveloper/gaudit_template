@@ -115,7 +115,7 @@ function Navbar() {
             <li className="text-white relative group p-4  min-w-max">
               <Link to={urlRoutes.CASES}>
                 <span>
-                  Cases
+                  Case Studies
                   <ChevronDownOutline
                     color={"#fff"}
                     width={"15px"}
@@ -215,7 +215,7 @@ function Navbar() {
             <li className="text-white relative group p-4 min-w-max" onClick={()=> setSubmenu(prev=> prev? null: 2)}>
               <Link to={urlRoutes.CASES}>
                 <span>
-                  Cases
+                  Case Studies
                   <ChevronDownOutline
                     color={"#fff"}
                     width={"15px"}
